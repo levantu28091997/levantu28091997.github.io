@@ -1,0 +1,24 @@
+/*Lessons Page*/
+
+/*Lessons Left*/
+.lesson-left ul li{ list-style: none; }
+.filterable-item { margin-bottom: 2em; border-bottom: 1px solid #f1f0f0; padding-bottom: 2em; }
+.filterable-item label{ margin-bottom: 0; }
+.filterable-item h4{ font-weight: 700; color: #00b1b3; margin: 1em 0; font-size: 1rem; }
+.filterable-item .icon img{ width: 15px; height: auto; margin-right: 10px;}
+.filterable-item label a{ color: #7d8793; line-height: 2em; font-weight: 500; text-decoration: none; }
+/*Lessons Right*/
+.form-lessons{ border-top: solid 1px #d7d7d7; padding-top: 2rem; }
+.lessons-list li{ list-style: none; }
+.form-lessons .lesson-right h2{ color: #363b41; font-weight: 500; font-size: 22px; margin-bottom: 2px;  }
+.form-lessons .lesson-right p{ font-size: .9em; line-height: 1.4; color: #919499; }
+.lessons-list .lessons-item{ border-bottom: 1px solid #f1f0f0; padding: 20px 0; }
+.lessons-list .lessons-item:last-child{ border-bottom:none; }
+.lessons-list .lessons-item h5 a{ font-size: 18px; letter-spacing: -1px; color: #4d545d; font-weight: 500; }
+.lessons-item .sub-title a{ color: #888;  }
+.lessons-item .time-run{ font-weight: 700; color: #cacaca !important; }
+.lessons-item .time-run .laravel{ background: rgb(237, 108, 99); }
+.lessons-item .time-run .tooling{background: rgb(239, 103, 51);}
+.lessons-item .time-run .javascript{background: rgb(171, 170, 67);}
+.lessons-item .time-run a{  font-size: 11px; height: 20px; padding: 4px 8px; color: #fff; border-radius: 25px; margin-right: 5px; text-decoration: none; font-weight: 700;}
+.lessons-item .time-run span svg{ fill: #cacaca; }

@@ -1,0 +1,56 @@
+
+/*Discuss Detail Page*/
+
+/*Heighlight Code CSS*/
+.hljs { border-radius: 5px; }
+.content-discuss-detail{ padding-right: 3rem; }
+.content-discuss-detail .discuss-post{ max-width: 855px; overflow-y: hidden; }
+.discuss-post strong pre{ font-size: 80%; }
+.content-discuss-detail .discuss-detail-title{ font-size: 24px; font-weight: 700; color: #4d545d;}
+.content-discuss-detail .time-post{ color: #cacaca;font-size: 14px; }
+.content-discuss-detail strong a{ color: #00b1b3; font-size: 14px;}
+.content-discuss-detail strong a:hover{ color: #4d545d; text-decoration: none; }
+pre code { font-size: smaller; }
+.best-answer-title{ background: #00b1b3; border-radius: 5px 5px 0 0;}
+.best-answer-title .answer-title-col1{ font-size: 18px; }
+.best-answer-title .answer-title-col2{ font-size: 11px; color: hsla(0,0%,100%,.7); }
+.best-answer-box{border: 1px solid #e6e6e6; border-top: none; padding-top: 2rem;border-radius: 0 0 5px 5px;}
+.best-answer-box .box-left, .box-right{ padding: 0 2rem; }
+.best-answer-panel h5{ padding: 0.5rem 20px; margin: 0; color: #fff; display: inline; }
+.avatar-best-answer a img{ border: 2px solid #fff; box-shadow: 0 2px 0 rgba(0,0,0,.1); border-radius: 50%; width: 75px; height: 75px; }
+.author-time{ display: inline; }
+.author-time .author{ color: #00b1b3; font-size: 17px; font-weight: 700; padding-right: 0.25em; display: inline;}
+.author-time .author:hover{ color: #4d545d; }
+.author-time a{ color: #cacaca !important; text-decoration: none; }
+.data-reply p{ font-weight: 300;}
+.data-reply .address a{ color: #847bb9;font-size: 14px;}
+.data-reply .address a:hover{ color: #847bb9;}
+
+/*Custom answer*/
+.custom-answer{ padding-top: 3rem; }
+.custom-answer-list{ padding: 1rem 0; }
+.custom-answer .custom-left{ padding: 0 2rem; }
+.custom-right .exp{ color: #ef6733;  }
+.log-acount{ padding: 4rem 0 0 2rem; color: #4d545d; font-weight: 700; font-size: 18px; }
+.log-acount a{ font-size: 18px !important; }
+.content-discuss-detail{ width: 100%;}
+.list-discuss-detail{padding-bottom: 40px;}
+@media screen and (min-width: 1300px){
+	
+}
+@media screen and (min-width: 1024px){
+
+}
+@media screen and (min-width: 768px){
+	.content-discuss-detail {padding-top: 20px;}
+}
+@media screen and (max-width: 767px){
+	.content-discuss-detail{ width: 100%; padding-right: 0; padding-top: 20px;}
+	.best-answer-box .box-right { padding: 0; width: 100%;}
+	.content-mb{ margin: 0 1rem; }
+	.hljs{padding: 0!important;}
+	.best-answer-box .box-right { padding: 0 10px; }
+	.custom-answer .custom-right{ width: 100%; }
+	.custom-answer-list{padding: 0; }
+	
+}

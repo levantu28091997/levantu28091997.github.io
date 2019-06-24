@@ -1,0 +1,88 @@
+/*Testing Page*/
+
+
+/*baner testing*/
+.banner-testing{background: linear-gradient(-45deg,#00b1b3,#1d5086); color: #fff; padding: 40px 0;}
+.banner-testing .banner{ padding: 40px 20px; }
+.testing-logo .series-thumbnail{ border: 5px solid hsla(0,0%,100%,.2); border-radius: 50%; width: 100%;}
+.testing-tag{ background: #ef6733; width: max-content; padding: 4px 12px; text-align: center; text-transform: uppercase; font-weight: 700;}
+.banner-testing .banner .pright-banner{ padding-right: 7rem; }
+.banner-testing .banner .testing-description{ color: hsla(0,0%,100%,.7); font-size: 18px; line-height: 1.6; }
+.banner-testing .banner .series-share{ border-top: 1px solid hsla(0,0%,100%,.2); padding-top: 3rem; letter-spacing: -.025em; font-weight: 700;}
+.banner-testing .banner .series-share a{ padding-left: 5px; }
+.banner-testing .banner .series-share .icon path{ fill: hsla(0,0%,100%,.2); }
+.banner-testing .banner .series-share .icon path:hover{ fill: #00b1b3; }
+
+/*Content testing*/
+	/*Content top*/
+.testing-box{ border-bottom: 1px solid #f1f1f1; }
+.testing-content{ padding: 3rem 3em; }
+.testing-content .mbottom{margin-bottom: 2rem;}
+.testing-content .series-card .series-card-index{position: absolute; top: 0; right: 15px; background: rgba(0,177,179,.8); color: #fff; padding: 7px 15px; z-index: 20;}
+.testing-content .series-card .series-card-thumbnail:hover{ background: #fff; }
+.testing-content .series-card .series-card-thumbnail img{ width: 100%; }
+.testing-content .series-card .series-card-detail{ position: absolute; top: 0; background: #2b2b2b; right: 15px; left: 15px; height: 100%; opacity: 0.6; color: #fff;}
+.testing-content .series-card:hover .series-card-detail{ display: none; transition: 5s ease-in 1s;}
+.series-card-detail .card-detail-fix{ padding: 1rem 0 0 1rem; }
+.card-detail-fix .detail-category { background: #ef6733; width: max-content; padding: 2px 5px; text-align: center; text-transform: uppercase; font-weight: 700; letter-spacing: -0.5px;}
+.card-detail-fix .detail-incap{ color: #919499; font-weight: 800;}
+
+/*animation*/
+.series-thumbnail{ position: relative; transform-origin: left; animation: myanimation 5s ease-in-out 1 }
+@keyframes myanimation{ 
+	to{right: 0px;}
+0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  } }
+/*End animation*/
+	/*Content bottom*/
+.testing-box-bottom .extra-credit-title{ text-align: center; font-size: 2.6rem; font-weight: 700; color: #4d545d; }
+.testing-box-bottom .extra-credit-description{ font-size: 18px; color: #919499; line-height: 1.4; text-align: center; }
+.testing-box-bottom ul li{ list-style: none; border-bottom: 1px solid #f1f0f0; padding: 1rem 0;}
+.testing-box-bottom ul li:last-child{ border-bottom: none; }
+.testing-box-bottom .lesson-list{ padding: 2rem 3rem; }
+.lesson-list .lesson-list-detail .list-detail-title a{ color: #4d545d; }
+.list-detail-run-time{ font-weight: 700; font-size: 0.9em; color: #cacaca; }
+.lesson-list-detail .list-detail-run-time a{text-decoration: none; font-size: 11px; padding: 4px 8px; background: rgb(237, 108, 99); color: #fff; border-radius: 290486px; font-weight: 800; margin-right: 5px;}
+.lesson-list-detail .list-detail-run-time .icon-hide-mobie{ fill: #cacaca;}
+.series-card-detail .card-detail-fix{ height: 210px; }
+
+@media screen and (min-width: 1300px){
+	.series-card-detail .card-detail-fix{ height: 200px !important; }
+	.card-detail-fix .detail-category{ font-size: 12px;}
+	.card-detail-fix .detail-title { font-size: 24px;}
+	.card-detail-fix .detail-incap { font-size: 0.8rem;}
+
+}
+@media screen and (min-width: 1024px){
+	.series-card-detail .card-detail-fix{ height: 180px; }
+	.card-detail-fix .detail-category{ font-size: 12px !important;}
+	.card-detail-fix .detail-title { font-size: 24px !important;}
+	.card-detail-fix .detail-incap { font-size: 0.8rem !important;}
+}
+@media screen and (min-width: 768px){
+	.series-card-detail .card-detail-fix{ height: 130px; }
+	.is-mobie{ display: none; }
+	.card-detail-fix .detail-category{ font-size: 10px;}
+	.card-detail-fix .detail-title { font-size: 18px;}
+	.card-detail-fix .detail-incap { font-size: 0.5rem;}
+}
+@media screen and (max-width: 767px){
+	.card-detail-fix .detail-title { font-size: 24px;}
+	.card-detail-fix .detail-incap { font-size: 0.8rem;}
+	.testing-content {padding: 3rem 0em;}
+	.is-pc{ display: none; }
+	.banner-testing .banner .pright-banner {padding-right: 15px;}
+	.testing-title{ text-align: center; padding-top: 1rem;}
+	.testing-tag { float: none; margin: 0 auto; }
+	.testing-box-bottom .extra-credit-description{ padding: 0 2rem; }
+	.testing-box-bottom .lesson-list { padding: 1rem 0.5rem;}
+	
+}
+
+

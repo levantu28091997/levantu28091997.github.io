@@ -1,0 +1,42 @@
+/*Contact Page*/
+
+.box-content-contact{ border-top: solid 1px #d7d7d7; padding: 5rem; }
+.contact-head{ width: 100%; text-align: center; }
+.contact-head h1{ font-size:2.6rem; color: #4d545d;}
+.contact-head p{ font-size: 19px; color: #919499; }
+.contact-content{ width: 50%; float: none; margin: 0 auto; }
+.contact-form .control{ width: 100%; }
+.contact-form  .control ::placeholder {font-size: 16px; color: #99a0aa; font-weight: 700; }
+.contact-form .control .input{ font-size: 16px; border: 1px solid #d7d7d7; border: 1px solid #d7d7d7; padding: 10px 15px; margin-bottom: 20px;}
+form { width: 100%; }
+form .input{width: 100%;}
+.btn-contact{ padding: 7px 20px; background: #fff; border: solid 1px #d7d7d7; font-weight: 700; margin-bottom: 20px; border-radius: 3px; font-size: 15px; color: #4d545d; }
+.btn-contact:hover{ border-color: #99a0aa; }
+
+
+.gray-title{font-size: 2.6rem; font-weight: 500; text-transform: none; letter-spacing: -.025em; margin-bottom: 1em; color: #4d545d; }
+.is-gray{ border-top: solid 1px #d7d7d7; padding-top: 2em;}
+.is-gray .box{ padding: 0; }
+.gray-item{ padding-right: 5rem; padding-bottom: 4em;}
+.gray-item h4{ font-size: 20px; font-weight: 700; color: #4d545d; letter-spacing: -.025em; padding-bottom: 1em;}
+.gray-item p{ font-size: 18px; font-weight: 500; color: #4d545d; }
+
+
+
+
+@media screen and (min-width: 1300px){
+
+}
+@media screen and (min-width: 1024px){
+
+}
+@media screen and (min-width: 768px){
+
+}
+@media screen and (max-width: 767px){
+	.box-content-contact{ padding: 0 }
+	.box-content-contact .contact-content{ width: 100%; }
+	.gray-title { font-size: 2rem; }
+	.gray-item { padding: 0 2rem; }
+	.contact-head h1 {font-size: 2rem; padding-top: 3rem;}
+}

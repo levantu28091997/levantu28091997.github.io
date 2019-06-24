@@ -1,0 +1,48 @@
+/*CSS Home Page*/
+	.content{ border-top: solid 1px #cacaca; }
+@media screen and (min-width: 1300px){
+	.seach .seach-input { width: 75% !important;}
+	.seach form button { margin-left: 0rem !important;}
+}
+@media screen and (min-width: 1024px){
+	.nav-text {padding: 10px 0 0 3rem !important;}
+	.seach .seach-input { width: 70%;}
+	.content .sidebar {padding-left: 3rem !important;}
+	.nav-log .signin {padding: 10px 0px 10px 10px !important;}
+	.is-hide{ display: block !important; }
+	.seach form button { margin-left: 3rem;}
+}
+@media screen and (min-width: 768px){
+	.is-hide{ display: none;}
+	.seach { height: max-content; }
+	.seach .seach-input { width: 60%;}
+	.content .sidebar { padding-left: 1rem;}
+	.nav-text { padding: 10px 0 0 0rem;}
+	.nav-log .signin {padding: 10px 0px 10px 0px;}
+	.top .newsletter-heading {padding-right: 4rem;}
+	.mobi{display: none;}
+}
+@media screen and (max-width: 767px){
+	.hide-mobie{ display: none; }
+	.is-bold{ text-align: center; }
+	.bottom-icon{justify-content: center!important; display: flex!important;}
+	.p-left{ padding-left: 15px;}
+	.top .newsletter-heading {padding: 1rem; text-align: center;}
+	.conversation-list{margin-right: 0;}
+	.conversation-list .conversation-content {padding: 0.2rem 2rem 0.2rem 2rem;}
+	.signup-banner { background: #00b1b3; min-height: 240px;}
+	.pd-mobile{text-align: center; padding: 0 1rem; justify-content: center!important; display: flex!important;}
+	.logo-top .is-brand svg { overflow: hidden; vertical-align: middle; width: 215px; padding-left: 1rem;}
+	.logo-top { padding: 10px 1rem 0 0;}
+	.content .sidebar { padding: 1rem; }
+	.bt-mobie{ border-top: solid 1px #d7d7d7; }
+/*Menu mobie*/
+	.mobi{padding: 0 20px; position: absolute; width: 100%; z-index: 100;}
+	.mobi nav { border-bottom: 0;}
+    .mobi ul li [type=search] { outline-offset: -2px; -webkit-appearance: none; padding: 10px; border: solid 1px #cacaca; width: 90%; font-size: 10px;}
+    .mobi nav ul { list-style: none; height: auto; padding: 0; display: none; margin-bottom: 0;}
+    .mobi nav ul li{ width: 100%; background: #fff; padding: 10px 20px; border-bottom: 1px solid #d7d7d7; text-transform: uppercase; letter-spacing: 1px;}
+    .mobi nav ul li a{ text-decoration: none;text-align: center; color: #4d545d; font-size: 14px;}
+    #pull { display: block; width: 100%;}
+    #pull:after { content:""; background: url('../img/nav.png')no-repeat; width: 30px; height: 30px; display: inline-block; position: absolute; right: 15px; top: 10px;}
+}

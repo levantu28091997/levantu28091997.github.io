@@ -1,0 +1,37 @@
+/*Series Page*/
+
+.series-bar-box{  border-top: solid 1px #d7d7d7; padding: 1rem 0; border-bottom: 1px solid #efefef;}
+.series-bar-box .series-bar{ padding: 0; }
+.series-bar a{ text-decoration: none; }
+.series-bar a span{ color: #00b1b3;}
+.series-bar a span:hover, .active{ color: #4d545d !important; font-weight: 700; text-decoration: none; }
+.series-bar .series-pr{ padding-right: 2em; }
+.series-bar .icon-gird{ background-image: url('../img/icon-gird.png'); background-repeat: no-repeat; width: 24px; height: 24px; display: flex; margin-right: 10px;}
+.series-bar .icon-list{ background-image: url('../img/icon-list.png'); background-repeat: no-repeat; width: 24px; height: 24px; display: flex;}
+
+.series-box{ border-bottom: 1px solid #f1f1f1; }
+.series-content{ padding: 3rem 3em; }
+.series-content .mbottom{margin-bottom: 2rem;}
+.series-content .series-card .series-card-thumbnail:hover{ background: #fff; }
+.series-content .series-card .series-card-thumbnail img{ width: 100%; }
+.series-content .series-card .series-card-detail{ position: absolute; top: 0; background: #2b2b2b; right: 15px; left: 15px; height: 100%; opacity: 0.6; color: #fff;}
+.series-content .series-card:hover .series-card-detail{ display: none; transition: 5s ease-in 1s;}
+.series-card .series-card-detail .series-pd{ padding: 1.5rem 3.5rem 0 1.5rem; }
+.series-card-detail .series-tag{ background: #ef6733; color: #fff; font-weight: 700; padding: 3px 7px; }
+.series-card-detail .series-title{ font-size: 24px; color: #fff; }
+.series-incap p{ margin: .5rem; }
+.series-incap .is-muted{ color: #919499; font-size: 0.7em; font-weight: 800; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  	.series-card .series-card-detail .series-pd { padding: .5rem 2rem 0 .5rem;}
+	.series-card-detail .series-tag {padding: 1px 5px;}
+	.series-card-detail .series-title { font-size: 15px; color: #fff;}
+	.series-incap p { margin: .1rem;}  
+}
+@media screen and (min-width: 1300px){}
+@media screen and (min-width: 1024px){}
+@media screen and (min-width: 768px){}
+
+@media screen and (max-width: 767px){
+	.series-content { padding: 1rem .3rem;}
+}

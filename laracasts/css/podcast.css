@@ -1,0 +1,46 @@
+/*Podcast Page*/
+
+/*Banner Podcast*/
+.banner-posdcast{ background: linear-gradient(-45deg,#00b1b3,#1d5086); color: #fff; padding: 40px 0px;}
+.banner-posdcast .banner .bncontent{ padding: 40px 0; }
+.banner-posdcast .banner .left h1{ font-size: 24px; font-weight: 700;line-height: 1; }
+.cate-list{ margin: 0; padding: 20px 0; }
+.cate-list li a:hover{ text-decoration: none; color: #4d545d; }
+
+/*Content Podcast*/
+.cate-podcast{ border-bottom: solid 1px #cacaca; }
+.cate-podcast ul li{ list-style: none; display: inline; }
+.cate-podcast ul li a{ color: #00b1b3; font-size: 18px; }
+.content-podcast .box-podcast{ padding: 0 3rem; border: solid 1px #eee; width: 100%; margin: 40px 0;}
+.item-podcast{ padding: 50px 0; }
+.circle{ width: 100px; height: 100px; border-radius: 50%; background: #00b1b3; border: solid 1px #007f80; position: relative;}
+.circle span{ position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); }
+.circle span a{ color: #fff; font-size: 35px; font-weight: 800; }
+.podcast-text{ padding:0 11rem 0 3rem; }
+.podcast-text .text-list{ color:#cacaca; font-weight: 700; margin-bottom: 0.5rem;}
+.podcast-text .text-list a{ text-decoration: none;color:#cacaca; font-weight: 700;}
+.podcast-text .text-list a:hover{ color:#cacaca; border-bottom: solid 1px #cacaca;}
+.podcast-text .text-list .divider{ font-size: 0.5em; padding: 0 5px; top: -3px; position: relative;}
+.podcast-text .text-list .run-time{ color: #00b1b3; }
+.podcast-text .text-title{ color: #00b1b3; }
+.podcast-text .text-title a{ color: #4d545d; text-decoration: none; }
+.podcast-text .text-title a:hover{ border-bottom: solid 1px #00b1b3; color: #00b1b3;}
+.podcast-text .exprect{ font-weight: 500; font-size: 18px; color: #4d545d; }
+
+
+@media screen and (min-width: 1300px){
+
+}
+@media screen and (min-width: 1024px){
+
+}
+@media screen and (min-width: 768px){
+
+}
+@media screen and (max-width: 767px){
+	.banner-posdcast {padding: 40px 20px;}
+	.podcast-text{ padding: 0; }
+	.content-podcast .box-podcast{padding: 0 1.5rem;}
+	.item-podcast{ padding: 30px 0 0 0; }
+	.content-podcast .box-podcast { padding: 0 0.5rem; margin: 40px 1rem;}
+}

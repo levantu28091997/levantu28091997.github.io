@@ -1,17 +1,21 @@
-// ------------------------------------- MENU REPONSIVE -------------------------------//
+$(document).ready(function(){
+"use strict";
+
 // Mobile Menu
 $('.js-click-megamenu').on('click', function(event) {
     $(".box-mobile-menu").addClass('open')
     $(".menu-overlay").fadeIn();
     event.preventDefault()
 });
-$(".menu-overlay").click(function(event) {
+$('.menu-overlay').on('click', function(event) {
     $(".box-mobile-menu").removeClass('open')
     $(".menu-overlay").fadeOut();
+    event.preventDefault()
 });
-$(".close-menu").click(function(event) {
+$('.close-menu').on('click', function(event) {
     $(".box-mobile-menu").removeClass('open')
     $(".menu-overlay").fadeOut();
+    event.preventDefault()
 });
 
 // Toggle submenu mobile / responsive
@@ -111,13 +115,15 @@ $('.js-search-box').on('click', function(event) {
     $(".st1-search-box-bg").addClass('search-box-bg-active')
     event.preventDefault()
 });
-$(".close-search-box").click(function(event) {
+$('.close-search-box').on('click', function(event) {
     $(".search-box").removeClass('search-box-active')
     $(".st1-search-box-bg").removeClass('search-box-bg-active')
+    event.preventDefault()
 });
-$(".st1-search-box-bg").click(function(event) {
+$('.st1-search-box-bg').on('click', function(event) {
     $(".search-box").removeClass('search-box-active')
     $(".st1-search-box-bg").removeClass('search-box-bg-active')
+    event.preventDefault()
 });
 
 // Minicart
@@ -126,13 +132,15 @@ $('.js-click-cart').on('click', function(event) {
     $(".minicart-bg-overlay").fadeIn('slow');
     event.preventDefault()
 });
-$(".hamadryad-minicart-close").click(function(event) {
+$('.hamadryad-minicart-close').on('click', function(event) {
     $(".hamadryad-minicart").removeClass('open')
     $(".minicart-bg-overlay").fadeOut('slow');
+    event.preventDefault()
 });
-$(".minicart-bg-overlay").click(function(event) {
+$('.minicart-bg-overlay').on('click', function(event) {
     $(".hamadryad-minicart").removeClass('open')
     $(".minicart-bg-overlay").fadeOut('slow');
+    event.preventDefault()
 });
 
  // Toggle submenu categories
@@ -146,47 +154,46 @@ $(document).on('click', '.st3-categories-item .st3-categories-icon', function (e
     return false;
 });
 
-// Sider Page3
-$(document).ready(function(){
-    $('.categories-slide-right').slick({
-        dots: false,
-        arrows: false,
-        autoplay: false,
-        autoplaySpeed:1500
-    });
+// Sider Page1
+$('.slide-homepage').slick({
+    dots: false,
+    arrows: false,
+    autoplay: false,
+    autoplaySpeed:1500
 });
+
+// Sider Page3
+$('.categories-slide-right').slick({
+    dots: false,
+    arrows: false,
+    autoplay: false,
+    autoplaySpeed:1500
+});
+
 
 // Sider About us
-$(document).ready(function(){
-    $('.slide-aboutus').slick({
-        dots: false,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed:1500
-    });
+$('.slide-aboutus').slick({
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed:1500
 });
-
 
 // Slide Page 2
-$(document).ready(function(){
-    $('.slide-page2').slick({
-        dots: false,
-        arrows: false,
-        autoplay: false,
-        autoplaySpeed:1500
-    });
+$('.slide-page2').slick({
+    dots: false,
+    arrows: false,
+    autoplay: false,
+    autoplaySpeed:1500
 });
 
 // Sider About us
-$(document).ready(function(){
-    $('.slide-contactus').slick({
-        dots: false,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed:1500
-    });
+$('.slide-contactus').slick({
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed:1500
 });
-
 
 //------- Deal of the week --------//  
 $('.active-review-carusel').owlCarousel({
@@ -265,37 +272,36 @@ $('.active-review-carusel').owlCarousel({
     margin:30,
     dots: true
 });
-
- $('.active-pro-relerate').owlCarousel({
-        items: 4,
-        loop: true,
-        autoplayHoverPause: true,
-        dots: false,
-        autoplay: false,
-        nav: false,
-        navText: ["<span class='lnr lnr-arrow-up'></span>", "<span class='lnr lnr-arrow-down'></span>"],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            480: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            1024: {
-                items: 3,
-            },
-            1280: {
-                items: 4,
-            },
-            1440: {
-                items: 4,
-            }
+$('.active-pro-relerate').owlCarousel({
+    items: 4,
+    loop: true,
+    margin: 30,
+    autoplayHoverPause: true,
+    dots: false,
+    autoplay: false,
+    nav: false,
+    navText: ["<span class='lnr lnr-arrow-up'></span>", "<span class='lnr lnr-arrow-down'></span>"],
+    responsive: {
+        0: {
+            items: 1,
+        },
+        480: {
+            items: 1,
+        },
+        768: {
+            items: 2,
+        },
+        1024: {
+            items: 3,
+        },
+        1280: {
+            items: 4,
+        },
+        1440: {
+            items: 4,
         }
-    });
-
+    }
+});
 $('.active-brand-carusel').owlCarousel({
     items: 4,
     loop: true,
@@ -371,7 +377,6 @@ $('.slider-single-v4').slick({
     focusOnSelect: true
   });
 
-
 // POPUP QuickView
 $('.review').on('click', function(event) {
     $(".product-quick-view").addClass('quick-view-active')
@@ -397,13 +402,15 @@ $('.review').on('click', function(event) {
     });
     event.preventDefault()
 });
-$(".product-quick-view-overlay").click(function(event) {
+$('.product-quick-view-overlay').on('click', function(event) {
     $(".product-quick-view").removeClass('quick-view-active')
-    $(".product-quick-view-overlay").fadeOut();
+    $(".product-quick-view-overlay").fadeOut()
+    event.preventDefault()
 });
-$(".close-quick-view").click(function(event) {
+$('.close-quick-view').on('click', function(event) {
     $(".product-quick-view").removeClass('quick-view-active')
-    $(".product-quick-view-overlay").fadeOut();
+    $(".product-quick-view-overlay").fadeOut()
+    event.preventDefault()
 });
 
 // POPUP Auto
@@ -412,13 +419,15 @@ $('.wishlist').on('click', function(event) {
     $(".popup-overlay").fadeIn();
     event.preventDefault()
 });
-$(".popup-overlay").click(function(event) {
+$('.popup-overlay').on('click', function(event) {
     $(".popup").removeClass('popup-active')
-    $(".popup-overlay").fadeOut();
+    $(".popup-overlay").fadeOut()
+    event.preventDefault()
 });
-$(".close-popup").click(function(event) {
+$('.close-popup').on('click', function(event) {
     $(".popup").removeClass('popup-active')
-    $(".popup-overlay").fadeOut();
+    $(".popup-overlay").fadeOut()
+    event.preventDefault()
 });
 
 
@@ -454,6 +463,22 @@ $('.sidebarleft-grid-js').on('click', function(event) {
     });
 });
 
+// SET WIDTH SUBMENU PAGE 1
+function setWidthFollowScreenPage1(selectorv1,comparev1,sub1v1,dadv1,sub2v1) {
+    if ($(window).width() >= 1025 ) {
+        var width=$(comparev1).width()-sub1v1;
+        $(selectorv1).css({'width':function(){return width+'px'}})
+    }
+
+    $(window).resize(function(){
+        if ($(window).width() >= 1025 ) {
+        var width=$(comparev1).width()-sub1v1;
+        $(selectorv1).css({'width':function(){return width+'px'}})
+        }
+    })
+}
+setWidthFollowScreenPage1('.js-dropmenuv1','.js-comparev1','160','.js-dadv1','80');
+
 // SET WIDTH SUBMENU
 function setWidthFollowScreen(selector,compare,sub1,dad,sub2) {
     if ($(window).width() >= 1025 ) {
@@ -480,11 +505,9 @@ function setWidthFollowScreen(selector,compare,sub1,dad,sub2) {
 setWidthFollowScreen('.js-dropmenu','.js-compare','160','.js-dad','80');
 
 // Popup auto show
-$(document).ready(function(){
-    setTimeout(function(){
-        $('.popup').addClass('popup-active');
-    }, 2000);
- });
+setTimeout(function(){
+    $('.popup').addClass('popup-active');
+}, 2000);
 
 //  Range Slider Filter Product Price
 $(".js-range-slider").ionRangeSlider({
@@ -524,7 +547,6 @@ function setheightSlide(selector1,compare1) {
             return height+'px'
         }})
     }
-
 }
 setheightSlide('.js-box-bg','.js-box-space');
 
@@ -540,3 +562,4 @@ function showSidebar() {
     })
 }
 showSidebar();
+});

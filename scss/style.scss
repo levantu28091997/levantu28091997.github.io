@@ -1,18 +1,69 @@
-/* --------------------------------------------------------
-Style Sheet for Hamadryad
+@charset "UTF-8";
+/**
+	Theme Name: Hamadryad
+	Theme URI: http://engotheme.com/
+	Author: Engo Team
+	Author URI: http://engotheme.com/
+	Description: Engo ABC HTML Template
+	Version: 1.0
+	Last change:	2019/06/25 [Initial Release]
+	License: GNU General Public License v2 or later
+	Tags: two-columns, left-sidebar, fixed-layout, responsive-layout
+	Text Domain: Engotheme
+ **/
+/*------------------------------------------------------------------
+[Table of contents]
 
-version: 1
-last modified: 2019 by Tu
-author: Tu
-----------------------------------------------------------*/
-
+	1. Reset
+		1.1. Reset
+		1.2. Animation
+			1.2.1	Key frames
+			1.2.2	Transition
+	2. Mixins
+	3. Home pages
+		3.1. Home page 1
+			3.1.1 General
+			3.1.2 Header
+			3.1.3 Main content
+			3.1.4 Footer
+		3.2. Home page 2
+			3.2.1 General
+			3.2.2 Header
+			3.2.3 Main content
+			3.2.4 Footer
+		3.3. Home page 3
+			3.3.1 Main content
+			3.3.1 Footer
+	4. Quick view
+	5. Ecommerce
+		5.1. General
+		5.2. Shop full width - List
+		5.3. Shop full width - Gird
+	6. Templates Layout
+		6.1. Product detail
+			6.1.1 Product detail version 1
+			6.1.2 Product detail version 3
+			6.1.3 Product detail version 4
+		6.2. Blog & New
+			6.2.1 Blog & New version 1
+			6.2.2 Blog & New version 2
+			6.2.3 Blog & New Post
+		6.3. Pages
+			6.3.1. About us
+			6.3.2. Contact us
+			...
+	7. Reponsive
+		7.1. Custom colums
+		7.2. Reponsive screen		
+-------------------------------------------------------------------*/
 
 $fontP: 'Playfair Display', serif;
 $fontR: 'Roboto', sans-serif;
 $colorHover: #748a53;
 $textColor: #241305;
 
-//reset style
+/** 1. Reset **/
+/** 1.1.	     Reset **/
 *{ padding: 0; margin: 0;}
 a:hover{ text-decoration: none;}
 body{
@@ -20,6 +71,10 @@ body{
 	color: $textColor;
 }
 .tx-center{ text-align: center; }
+.img-width{ width: 100%;}
+
+/** 1.2.	Animation **/
+/** 1.2.1	     Key frames **/
 @keyframes fadeInLeft {
     from { 
         opacity: 0;
@@ -32,7 +87,6 @@ body{
         transform: none
       }
 }
-// Animation Shine Image
 @-webkit-keyframes shine {
 	100% {
 		left: 100%;
@@ -43,8 +97,6 @@ body{
 		left: 100%;
 	}
 }
-
-// Animation btn sidebar
 @keyframes btnSidebar {
     0% {
         transform: scale(1);
@@ -57,209 +109,24 @@ body{
     }
 }
 
+/** 1.2.2	     Transition **/
 a{
     transition: color 0.3s ease 0s, background-color 0.3s ease 0s, border-color 0.3s ease 0s;
     -o-transition: color 0.3s ease 0s, background-color 0.3s ease 0s, border-color 0.3s ease 0s;
     -webkit-transition: color 0.3s ease 0s, background-color 0.3s ease 0s, border-color 0.3s ease 0s;
 }
-.img-width{ width: 100%;}
-// ============================================= HOME PAGE 01 =================================================
-//=============================================================================================================
-	.menu-st1{
-		margin: 0 75px;
-		position: absolute;
-		z-index: 100;
-		top: 75px;
-		left: 0;
-		right: 0;
-	}
 
-	// SLIDE HOMEPAGE 1
-	.homepage1-slide{
-		position: relative;
-		.homepage1-slide-content_bg{
-			background: url('../images/homepage1-bg.png');
-			background-repeat: no-repeat;
-			background-position: left bottom;
-			background-size: cover;
-			// height: 500px;
-			position: absolute;
-			top: 75px;
-			left: 75px;
-			right: 75px;
-			z-index: 1;
-			.homepage1-slide-content{
-				padding-top: 180px;
-				// padding-bottom: 205px;
-				.st1-slide-content_left{
-					font-size: 18px;
-					.st1-info-tile{
-						font-size: 60px;
-						font-family: $fontP;
-						font-weight: 700;
-						line-height: 90px;
-					}
-					.st1-info-des{ 
-						font-weight: 700;
-						padding-bottom: 45px;
-					}
-				}
-				.st1-slide-content_right{
-					.st1-info-date{
-						padding-top: 20px;
-						font-size: 36px;
-					}
-				}
-			}
-			.avatar-header{
-				position: relative;
-				padding-top: 155px;
-				right: 0;
-				bottom: 0;
-				.box-image{
-					.box-text{
-						-moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-						-webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-						transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-						position: absolute;
-						text-transform: uppercase;
-						bottom: 85px;
-						font-size: 18px;
-						right: -170px;
-					}
-				}
-			}
-		}
-		.box-top-right{
-			width: 40%;
-			height: 699px;
-			position: absolute;
-			background: #748a53;
-			top: 0;
-			right: 0;
-			display: block;
-		}
-	}
-
-	// Search box
-	.st1-search-box{
-		line-height: 0;
-		.search-box-bg-active{
-			opacity: 1 !important;
-			visibility: visible !important;
-			z-index: 1 !important;
-		}
-		.st1-search-box-bg{
-			width: 100vw;
-			height: 100vh;
-			// background-color: rgba(53,57,68,0.9);
-			background-color: rgba(0, 0, 0, 0.56);
-			top: 0;
-			left: 0;
-			position: fixed;
-			z-index: 6;
-			opacity: 0;
-			visibility: hidden;
-		}
-		.search-box-active{
-			opacity: 1 !important;
-			visibility: visible !important;
-			top: 20vh !important;
-		}
-		.search-box{
-			z-index: 6;
-			top: 0;
-			position: fixed;
-			background: #fff;
-			padding: 50px;
-			width: 80%;
-			right: 50%;
-			transform: translateX(50%);
-			box-shadow: 1px 2px 16px 4px rgba(53,57,68,0.2);
-			opacity: 0;
-			visibility: hidden;
-			transition: all 0.5s ease;
-			.search-box-content{
-				.close-search-box{
-					position: absolute;
-					top: 12px;
-					right: 10px;
-					font-size: 12px;
-					transition: all 0.3s ease;
-				}
-				.hd-search-form{
-					width: 100%;
-					border-top: none;
-					border-right: none;
-					border-left: none;
-					border-bottom: 1px solid #e1e1e1;
-					input{
-						padding: 5px 10px;
-						border: none;
-						width: 88%;
-						color: #6d6c6c;
-						&:focus{ outline: none;}
-					}
-					button{
-						width: 10%;
-						background-color: $colorHover;
-						border: none;
-						color: #fff;
-						padding: 5px 0;
-						cursor: pointer;
-						&:focus{ outline: none;}
-					}
-				}
-			}
-		}
-	}
-
-	// END SLIDE HOMEPAGE 1
-
-
-.box-image-header-v1{
-	margin: 0 75px;
-	position: relative;
-	z-index: 100;
-	top: -35%;
-	.box-image{
-		position: relative;
-		max-width: 451px;
-		// img{ padding-right: 20px;}
-		.box-text{
-			-moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-			-webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-			transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-			position: absolute;
-			text-transform: uppercase;
-			bottom: 85px;
-			font-size: 18px;
-			width: max-content;
-			right: -160px;
-		}
-	}
-	.box-left{ background: #fff;}
-}
-
-
-/* ==========================================================*/
-/* ======================= Item Public ======================*/
-/* ==========================================================*/
-// close modals hover
+/** 2. Mixins **/
 .close-st{
 	&:hover{
 		color: #ff0000 !important;
 		transition: all .3s;
 	}
 }
-
-// padding block
 .padding-section{
 	padding-left: 35px ;
 	padding-right: 35px ;
 }
-
-//Client say
 .clientsay{
 	font-size: 18px;
     width: 80%;
@@ -288,8 +155,6 @@ a{
 		}
 	}
 }
-
-// buttom public
 .btn-custom:hover::after{ width: 100% !important;}
 .btn-custom{
 	color: #fff;
@@ -322,8 +187,6 @@ a{
 		font-size: 18px;
 	}
 }
-
-// title item public
 .box-title{
 	text-align: center;
 	width: 100%;
@@ -358,8 +221,6 @@ a{
 		font-weight: 700;
 	}
 }
-
-// item product public
 .box-item{
 	position: relative;
 	border: solid 3px #f4f4f400;
@@ -450,8 +311,6 @@ a{
 		}
 	}
 }
-
-// Pagination public
 .homepage1-pagination{
 	font-size: 18px;
 	.line{
@@ -465,8 +324,6 @@ a{
 		&:hover{ color: $colorHover !important; }
 	}
 }
-
-// Menu mobile
 .box-mobile-menu.open{ left: 0;}
 .box-mobile-menu{
 	display: block;
@@ -687,8 +544,6 @@ a{
 		}
 	}
 }
-
-// POPUP
 .popup-active{
 	visibility: visible !important;
     opacity: 1 !important;
@@ -780,11 +635,179 @@ a{
 	}
 }
 
+/** 3. Home pages **/
+/** 3.1.	     Home page 1 **/
 
-/* ==========================================================*/
-/* ======================= Header ===========================*/
-/* ==========================================================*/
-// menu
+/** 3.1.1	     General **/
+.menu-st1{
+	margin: 0 75px;
+	position: absolute;
+	z-index: 100;
+	top: 75px;
+	left: 0;
+	right: 0;
+}
+.homepage1-slide{
+	position: relative;
+	.homepage1-slide-content_bg{
+		background: url('../images/homepage1-bg.png');
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		background-size: cover;
+		// height: 500px;
+		position: absolute;
+		top: 75px;
+		left: 75px;
+		right: 75px;
+		z-index: 1;
+		.homepage1-slide-content{
+			padding-top: 180px;
+			// padding-bottom: 205px;
+			.st1-slide-content_left{
+				font-size: 18px;
+				.st1-info-tile{
+					font-size: 60px;
+					font-family: $fontP;
+					font-weight: 700;
+					line-height: 90px;
+				}
+				.st1-info-des{ 
+					font-weight: 700;
+					padding-bottom: 45px;
+				}
+			}
+			.st1-slide-content_right{
+				.st1-info-date{
+					padding-top: 20px;
+					font-size: 36px;
+				}
+			}
+		}
+		.avatar-header{
+			position: relative;
+			padding-top: 155px;
+			right: 0;
+			bottom: 0;
+			.box-image{
+				.box-text{
+					-moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+					-webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+					transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+					position: absolute;
+					text-transform: uppercase;
+					bottom: 85px;
+					font-size: 18px;
+					right: -170px;
+				}
+			}
+		}
+	}
+	.box-top-right{
+		width: 40%;
+		height: 699px;
+		position: absolute;
+		background: #748a53;
+		top: 0;
+		right: 0;
+		display: block;
+	}
+}
+.st1-search-box{
+	line-height: 0;
+	.search-box-bg-active{
+		opacity: 1 !important;
+		visibility: visible !important;
+		z-index: 1 !important;
+	}
+	.st1-search-box-bg{
+		width: 100vw;
+		height: 100vh;
+		// background-color: rgba(53,57,68,0.9);
+		background-color: rgba(0, 0, 0, 0.56);
+		top: 0;
+		left: 0;
+		position: fixed;
+		z-index: 6;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.search-box-active{
+		opacity: 1 !important;
+		visibility: visible !important;
+		top: 20vh !important;
+	}
+	.search-box{
+		z-index: 6;
+		top: 0;
+		position: fixed;
+		background: #fff;
+		padding: 50px;
+		width: 80%;
+		right: 50%;
+		transform: translateX(50%);
+		box-shadow: 1px 2px 16px 4px rgba(53,57,68,0.2);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.5s ease;
+		.search-box-content{
+			.close-search-box{
+				position: absolute;
+				top: 12px;
+				right: 10px;
+				font-size: 12px;
+				transition: all 0.3s ease;
+			}
+			.hd-search-form{
+				width: 100%;
+				border-top: none;
+				border-right: none;
+				border-left: none;
+				border-bottom: 1px solid #e1e1e1;
+				input{
+					padding: 5px 10px;
+					border: none;
+					width: 88%;
+					color: #6d6c6c;
+					&:focus{ outline: none;}
+				}
+				button{
+					width: 10%;
+					background-color: $colorHover;
+					border: none;
+					color: #fff;
+					padding: 5px 0;
+					cursor: pointer;
+					&:focus{ outline: none;}
+				}
+			}
+		}
+	}
+}
+.box-image-header-v1{
+margin: 0 75px;
+position: relative;
+z-index: 100;
+top: -35%;
+.box-image{
+	position: relative;
+	max-width: 451px;
+	// img{ padding-right: 20px;}
+	.box-text{
+		-moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+		-webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+		transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+		position: absolute;
+		text-transform: uppercase;
+		bottom: 85px;
+		font-size: 18px;
+		width: max-content;
+		right: -160px;
+	}
+}
+.box-left{ background: #fff;}
+}
+
+/** 3.1.2	     Header **/
 .header-menu{
 	color: $textColor;
 	padding-top: 15px;
@@ -804,12 +827,51 @@ a{
 				display: inline-block;
 				margin: 0 35px;
 				position: relative;
+				.dropmenu-v2{
+					opacity: 1;
+					visibility: visible;
+					overflow: hidden;
+					margin-top: 56px;
+					left: -50px;
+					text-align: left;
+					top: 100%;
+					min-width: 230px;
+					background-color: #f4f4f4;
+					position: absolute;
+					-webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+					-moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+					box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+					z-index: 1;
+					-webkit-animation-name: smoothFadeOutLeft;
+					animation-name: smoothFadeOutLeft;
+					-webkit-animation-duration: 0.4s;
+					animation-duration: 0.4s;
+					-webkit-animation-fill-mode: both;
+					animation-fill-mode: both;
+					transition: visibility 0s linear 0.4s, opacity 0.4s linear;
+					-webkit-transition: visibility 0s linear 0.4s, opacity 0.4s linear;
+					.dropdown-menu-list{
+						display: none;
+						margin-bottom: -1px !important;
+						border-bottom-width: 25px !important;
+						padding: 35px;
+						list-style: none;
+						.level2{
+							.level2-link{
+								color: #241305;
+								font-size: 18px;
+								&:hover{ color: $colorHover;}
+							}
+						}
+					}
+				}
 				.st1-hamadryad-megamenu{ margin-top: 0 !important;}
 				.st2-hamadryad-megamenu{
 					opacity: 1;
 					visibility: visible;
 					overflow: hidden;
 					margin-top: 56px;
+					left: -50px;
 					text-align: left;
 					top: 100%;
 					min-width: 230px;
@@ -891,6 +953,17 @@ a{
 					.megamenu-home{
 						-webkit-animation: fadeInLeft .6s;
 						animation: fadeInLeft .6s;
+					}
+					.dropmenu-v2{
+						-webkit-animation-name: smoothFadeInRight;
+						animation-name: smoothFadeInRight;
+						-webkit-animation-duration: 0.6s;
+						animation-duration: 0.6s;
+						-webkit-animation: fadeInLeft .6s;
+						animation: fadeInLeft .6s;
+						.dropdown-menu-list{
+							display: block !important;
+						}
 					}
 					.st2-hamadryad-megamenu{
 						.st2-hamadryad-megamenu-modal{ display: block !important;}
@@ -1064,22 +1137,26 @@ a{
 	}
 }
 
-/* ==========================================================*/
-/* ====================== Main Content ======================*/
-/* ==========================================================*/
+/** 3.1.3	     Main content **/
 .main-content{
 	background: #fff url('../images/background/bg-main.jpg') no-repeat top left;
     background-size: cover;
     background-position-x: center;
     background-position-y: 150px;
 }
-
-// Categories
+.clear{
+	&::before, &::after{
+		content:" ";
+  		display:table;
+	}
+}
+.gutter{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 .categories{
 	margin: 120px 0;
-	img{ max-width: 100%; height: 100%;}
-	.cate-left{ .cate-line-bottom{ margin-top: 30px;}}
-	.tes-bottom{ margin-top: 30px;}
+	img{ width: 100%; height: auto;}
 	.categories-item{
 		position: relative;
 		&:hover{ 
@@ -1101,9 +1178,6 @@ a{
 		}
 	}
 }
-
-// Popular product
-// Banner
 .banner{
 	background: #000 url('../images/background/bg-middle.jpg') no-repeat top left;
 	width: 100%;
@@ -1139,13 +1213,9 @@ a{
 		}
 	}
 }
-
-// Deal of the Week
 .deal-of-the-week{ .dotw-pagination{ .btn-pg{ color: $textColor;}}}
 
-/* ==========================================================*/
-/* ======================= Footer ===========================*/
-/* ==========================================================*/
+/** 3.1.4	     Footer **/
 .footer-wrapper{
 	.footer-bg{
 		background: #000 url('../images/background/bg-footer.jpg') no-repeat top left;
@@ -1185,7 +1255,13 @@ a{
 		.footer-info{
 			font-size: 14px;
 			line-height: 79px;
-			.info-payment{ .payment-text{ padding-right: 20px;}}
+			.info-payment{
+				.payment-text{ padding-right: 20px;}
+				img{
+					width: 175px;
+					height: auto;
+				}
+			}
 			.social-inner{
 				.socials{
 					display: inline-block;
@@ -1202,15 +1278,8 @@ a{
 	}
 }
 
-// ============================================= HOME PAGE 02 =================================================
-//=============================================================================================================
-
-
-/* ==========================================================*/
-/* ======================= Item Public ======================*/
-/* ==========================================================*/
-
-//Button submit
+/** 3.2.	     Home page 2 **/
+/** 3.2.1	     General **/
 .st2-btn-submit:hover::after{ width: 100% !important;}
 .st2-btn-submit{
     color: #fff;
@@ -1244,8 +1313,6 @@ a{
     }
     .st2-submit-icon{ vertical-align: middle; padding-left: 7px; }
 }
-
-//background overlay
 .overlay{
 	position: absolute;
 	top: 0;
@@ -1258,11 +1325,7 @@ a{
 	transition: all .3s ease;
 }
 
-/* ==========================================================*/
-/* ======================= Header ===========================*/
-/* ==========================================================*/
-
-//TOP HEADER
+/** 3.2.2	     Header **/
 .header-topbar{
 	font-size: 12px;
 	background: $colorHover;
@@ -1318,8 +1381,6 @@ a{
 		}
 	}
 }
-
-//MENU
 .menutora{
     background: #fff;
     z-index: 170;
@@ -1404,24 +1465,24 @@ a{
                             .megamenu-home{
                                 -webkit-animation: fadeInLeft .6s;
                                 animation: fadeInLeft .6s;
-                            }
+							}
+							.dropmenu-v2{
+								-webkit-animation-name: smoothFadeInRight;
+                                animation-name: smoothFadeInRight;
+                                -webkit-animation-duration: 0.6s;
+								animation-duration: 0.6s;
+								-webkit-animation: fadeInLeft .6s;
+								animation: fadeInLeft .6s;
+								.dropdown-menu-list{
+									display: block !important;
+								}
+							}
                         }
 						.st2-item-link{
 							text-decoration: none;
 							font-family: $fontP;
 							color: $textColor;
 							font-size: 18px;
-							// &::before{
-	                        //     content: "";
-	                        //     width: 0%;
-	                        //     border-bottom: 3px solid $colorHover;
-	                        //     position: absolute;
-	                        //     left: 50%;
-	                        //     bottom: -57px;
-	                        //     transition: width 0.4s linear 0s;
-	                        //     -o-transition: width 0.4s linear 0s;
-	                        //     -webkit-transition: width 0.4s linear 0s;
-	                        // }
 	                        &::after{
 	                            content: "";
 	                            width: 0;
@@ -1439,17 +1500,6 @@ a{
 							font-family: $fontP;
 							color: $textColor;
 							font-size: 18px;
-							// &::before{
-	                        //     content: "";
-	                        //     width: 0%;
-	                        //     border-top: 3px solid $colorHover;
-	                        //     position: absolute;
-	                        //     left: 50%;
-	                        //     top: -36px;
-	                        //     transition: width 0.4s linear 0s;
-	                        //     -o-transition: width 0.4s linear 0s;
-	                        //     -webkit-transition: width 0.4s linear 0s;
-	                        // }
 	                        &::after{
 	                            content: "";
 	                            width: 0;
@@ -1464,8 +1514,44 @@ a{
 						}
 						.megamenu-home{
 							width: 1570px;
-                            // max-width: 1570px;
-                            // left: -385.125px;
+						}
+						.dropmenu-v2{
+							opacity: 1;
+                            visibility: visible;
+                            overflow: hidden;
+							margin-top: 56px;
+							left: -50px;
+                            text-align: left;
+                            top: 100%;
+                            min-width: 230px;
+                            background-color: #f4f4f4;
+                            position: absolute;
+                            -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+                            -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+                            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+                            z-index: 1;
+                            -webkit-animation-name: smoothFadeOutLeft;
+                            animation-name: smoothFadeOutLeft;
+                            -webkit-animation-duration: 0.4s;
+                            animation-duration: 0.4s;
+                            -webkit-animation-fill-mode: both;
+                            animation-fill-mode: both;
+                            transition: visibility 0s linear 0.4s, opacity 0.4s linear;
+							-webkit-transition: visibility 0s linear 0.4s, opacity 0.4s linear;
+							.dropdown-menu-list{
+								display: none;
+								margin-bottom: -1px !important;
+								border-bottom-width: 25px !important;
+								padding: 35px;
+								list-style: none;
+								.level2{
+									.level2-link{
+										color: #241305;
+										font-size: 18px;
+										&:hover{ color: $colorHover;}
+									}
+								}
+							}
 						}
 						.st2-hamadryad-megamenu{
 							opacity: 1;
@@ -1614,8 +1700,6 @@ a{
 		}
 	}
 }
-
-// MINI CART
 .hamadryad-minicart.open{  right: 0;}
 .hamadryad-minicart{
 	display: block;
@@ -1766,11 +1850,7 @@ a{
     z-index: 1025;
 }
 
-/* ==========================================================
-/* ====================== Main Content ======================*/
-/* ==========================================================*/
-
-// SLIDE
+/** 3.2.3	     Main content **/
 .banner-title-header{
 	background: url('../images/Blog&New/banner.jpg') no-repeat;
 	min-height: 250px;
@@ -1802,8 +1882,6 @@ a{
 		}
 	}
 }
-
-//CATEGORY
 .st2-categories{
 	position: relative;
 	top: -170px;
@@ -1842,8 +1920,6 @@ a{
 		}
 	}
 }
-
-//OUR HISTORY
 .our-history{
 	margin: 110px 0;
 	.st2-clientsay{
@@ -1860,8 +1936,6 @@ a{
 		}
 	}
 }
-
-// BANNER
 .block-banner{
 	.block-banner__wrapper{
 		position: relative;
@@ -1912,11 +1986,7 @@ a{
 		}
 	}
 }
-
-// POPULAR PRODUCTS
 .st2-popular-product{ padding-top: 120px; padding-bottom: 120px;}
-
-//BLOG POST
 .blog-post-wrapper-st2{ background: #f4f4f4;}
 .blog-post-wrapper{ padding-top: 120px; padding-bottom: 120px;}
 .blog-post{
@@ -1962,8 +2032,6 @@ a{
 		}
 	}
 }
-
-//NEWSLETTER
 .newsletter{
 	margin: 120px 0;
 	.newsletter-top{
@@ -2005,22 +2073,21 @@ a{
 		input[type="email"]{ color: #dddddd;}
 	}
 }
-
-//INSTARGRAM
 .instagram{
 	position: relative;
 	// .instagram-img{ img{ width: 100%; height: auto; }}
 	.instagram-btn{
 		display: inline-block;
 	    background: #fff;
-	    line-height: 50px;
 	    padding: 0 25px;
 	    position: absolute;
 	    top: 50%;
 	    left: 50%;
 	    transform: translate(-50%, -50%);
 	    .icon-itgr{
-	    	font-size: 18px;
+			line-height: 50px;
+			font-size: 18px;
+			font-weight: 100;
 	    	color: $textColor;
 	    	i{ padding-right: 10px; }
 	    }
@@ -2034,9 +2101,7 @@ a{
     background-size: cover;
 }
 
-/* ==========================================================*/
-/* ======================= Footer ===========================*/
-/* ==========================================================*/
+/** 3.2.4	     Footer **/
 .footer-wrapper-st2{
 	.footer-st2{
 		.footer-content-st2{
@@ -2053,6 +2118,9 @@ a{
 		}
 		.footer-info-st2{
 			line-height: 80px;
+			.info-payment{
+				img{ width: 175px; height:auto;}
+			}
 			.social-inner-st2{
 				.socials-st2{
 					display: inline-block;
@@ -2069,10 +2137,8 @@ a{
 	}
 }
 
-// ============================================= HOME PAGE 03 =================================================
-//=============================================================================================================
-
-// CATEGORIES SLIDE
+/** 3.3.	     Home page 3 **/
+/** 3.3.1	     Main content **/
 .categories-slide{
 	.categories-slide-left{
 		.st3-categories{
@@ -2195,8 +2261,6 @@ a{
 		}
 	}
 }
-
-// BANNER - POUNDER SAY
 .st3-banner-poundersay{
 	padding-top: 30px;
 	.st3-banner{ overflow: hidden;}
@@ -2245,14 +2309,10 @@ a{
 		}
 	}
 }
-
-// POPULAR PRODUCT
 .st3-popular-product{
 	padding-top: 50px;
 	padding-bottom: 105px;
 }
-
-// SUPPORT
 .st3-support{
 	.st3-support-item{
 		background: #eeeeee;
@@ -2275,8 +2335,12 @@ a{
 		display: flex;
 	}
 }
-
-// FOOTER
+.st3-banner-bottom{
+	background: url('../images/homepage2/banner.jpg') no-repeat;
+    min-height: 550px;
+    background-position: top left;
+}
+/** 3.3.2	    Footer **/
 .footer-content-st3{
 	.footer-content-st3-box{ border-bottom: solid 1px #f4f4f4; padding: 115px 0;}
 	.footer-content-st3-right{
@@ -2324,8 +2388,6 @@ a{
 		}
 	}
 }
-
-// 
 .icon-plus{ 
 	display: none;
 	float: right;
@@ -2333,15 +2395,7 @@ a{
     font-size: 18px;
 }
 
-// BANNER BOTTOM
-.st3-banner-bottom{
-	background: url('../images/homepage2/banner.jpg') no-repeat;
-    min-height: 550px;
-    background-position: top left;
-}
-
-// ===================================================== Quickview ============================================
-//=============================================================================================================
+/** 4. Quick view **/
 .product-quick-view{
 	display: -ms-flexbox;
     display: -webkit-flex;
@@ -2418,9 +2472,8 @@ a{
 	width: auto;
 }
 
-// ============================================= SHOPPAGE SIDEBAR LEFT ========================================
-//=============================================================================================================
-// Sidebar
+/** 5. Ecommerce **/
+/** 5.1.	    General **/
 .filter-by-price{
 	.filter-by-price-title{
 		font-size: 24px;
@@ -2486,8 +2539,7 @@ a{
 	}
 }
 
-// =========================================== LIST SHOPPAGE FULL WIDTH =======================================
-//=============================================================================================================
+/** 5.2.	    Shop full width - List **/
 .d-none-list-shoppage{ display: none;}
 .list-pb{ padding-bottom: 30px;}
 .item-list-shoppage{
@@ -2558,8 +2610,7 @@ a{
 	.box-item-image{ width: 100%; height: max-content;}
 }
 
-// ============================================= SHOPPAGE FULL WIDTH ==========================================
-//=============================================================================================================
+/** 5.3.	    Shop full width - Gird **/
 .shoppage-fullwidth{
 	background: #eeeeee;
 	padding: 36px 0;
@@ -2652,8 +2703,10 @@ a{
     padding-bottom: 120px;
 }
 
-// ============================================= PRODUCT DETAIL V1 ============================================
-//=============================================================================================================
+/** 6. Templates Layout **/
+/** 6.1. Product detail **/
+
+/** 6.1.1	    Product detail version 1 **/
 .product-detail-v1{
 	padding-top: 50px;
 	padding-bottom: 100px;
@@ -2770,9 +2823,7 @@ a{
 }
 .product-detail-v1-related{ padding-bottom: 130px;}
 
-
-// ============================================= PRODUCT DETAIL V3 ============================================
-//=============================================================================================================
+/** 6.1.2	    Product detail version 3 **/
 .custom-col-md-2-prod, .custom-col-md-10-prod{
 	position: relative;
 	width: 100%;
@@ -2801,7 +2852,6 @@ a{
 		.order1-prodetail-v3{ order: 1;}
 	}
 }
-// Slide product
 .slider-nav{
 	.slick-slide{
 		border: 3px solid #f4f4f4;
@@ -2822,8 +2872,7 @@ a{
 	}
 }
 
-// ============================================= PRODUCT DETAIL V4 ============================================
-//=============================================================================================================
+/** 6.1.3	    Product detail version 4 **/
 .product-detail-v4{
 	padding: 0;
 	margin: 0;
@@ -2849,10 +2898,8 @@ a{
 	}
 }
 
-
-
-// ============================================= BLOG & NEW V1 ================================================
-//=============================================================================================================
+/** 6.2. Blog & New **/
+/** 6.2.1	    Blog & New version 1 **/
 .info-author{
 	padding: 15px 0 25px 0;
 	.author-avatar{
@@ -3027,8 +3074,7 @@ a{
 	
 }
 
-// ============================================= BLOG & NEW V2 ================================================
-//=============================================================================================================
+/** 6.2.2	    Blog & New version 2 **/
 .st2-banner-content-child-page{
 	color: #fff;
 	position: absolute;
@@ -3095,8 +3141,7 @@ a{
 	}
 }
 
-// ============================================ BLOG & NEW POST ===============================================
-//=============================================================================================================
+/** 6.2.3	    Blog & New Post **/
 .blogn-post-meta{
 	font-size: 18px;
 	.blogn-post-author, .blogn-post-date, .blogn-post-comment{ display: inline-block;}
@@ -3207,10 +3252,8 @@ a{
 	
 }
 
-// ============================================= About Us =====================================================
-//=============================================================================================================
-
-// ABOUTUS
+/** 6.3. Pages **/
+/** 6.3.1	    About us **/
 .about-us{
 	margin-top: -170px;
 	.about-us-wrapper{
@@ -3232,7 +3275,6 @@ a{
 		}
 	}
 }
-// TESTIMONIAL
 .testimonial{
 	margin: 110px 0;
 	.testimonial-wrapper{
@@ -3250,16 +3292,12 @@ a{
 	}
 }
 
-// ============================================= Contact Us ===================================================
-//=============================================================================================================
-
+/** 6.3.2	    Contact us **/
 .flex-custom{ 
 	display: flex;
 	.st2-email-text, .st2-phone-text, .st2-address-text{ font-size: 15px;}
 }
-// SLIDE
 .slide-wrapper{ .slide-bg{ .overlay{ .st2-slide-content{ .silde-des-contactus{ padding-bottom: 0px !important;}}}}}
-// CONTACT INFO
 .contact-info{
 	margin-top: 90px;
 	.contact-info-top{
@@ -3289,8 +3327,6 @@ a{
 	}
 	.contact-info-map{ margin-top: 50px;}
 }
-
-// TOUCH WITH US
 .touch-with-us{
 	margin: 110px 0 120px;
 	.des-title-pagecontact{ padding-bottom: 40px; margin: 0; }
@@ -3328,12 +3364,8 @@ a{
 		}
 	}
 }
-
-/* ===============================================================================*/
-/* ==================================== REPONSIVE ================================*/
-/* ===============================================================================*/
-
-// custom col
+/** 7. Reponsive **/
+/** 7.1	    Custom colums **/
 .cl-md-ipad-12, .st2-col-lapt-3, .st2-col-lapt-9, .col-blogn-custom, .col-custom-12, .cl-md-w2-12, .st3-col-lapt-12, .col-custom-6, .col-t-7, .col-t-5, .col-19px-12{
 	position: relative;
     width: 100%;
@@ -3341,8 +3373,7 @@ a{
     padding-left: 15px;
 }
 
-
-//================= Reponsive screen ============
+/** 7.2	    Reponsive screen **/
 @media (min-width: 2000px){
 	.col-xxl{
 		-webkit-box-flex: 0;
@@ -3365,7 +3396,6 @@ a{
 		max-width: 41.666667%;
 	}
 }
-
 @media (max-width: 1700px){
 	.box-image-header-v1{ top: -230px;}
 	.product-detail-v4-right{
@@ -3409,7 +3439,7 @@ a{
 				.st2-hamadryad-menu{
 					.st2-menu-primary{
 						.st2-li-primary{
-							.st2-hamadryad-megamenu{
+							.st2-hamadryad-megamenu, .dropmenu-v2{
 								margin-top: 35px;
 							}
 							.st2-item-link{
@@ -3442,7 +3472,6 @@ a{
 		}
 	}
 }
-
 @media (max-width: 1500px){
 	.st2-control-right{ .st2-control-block{ padding-right: 15px !important;}}
     .st2-menu-primary{ .st2-li-primary{ margin: 0 15px !important;}}
@@ -3518,14 +3547,44 @@ a{
 	.header-menu{
 		.menu-left{
 			.menu-primary{
-				.li-primary{ margin: 0 20px;}
+				.li-primary{ 
+					margin: 0 20px;
+					.st2-hamadryad-megamenu{
+						.st2-hamadryad-megamenu-modal{
+							padding: 25px !important;
+						}
+					}
+					.dropmenu-v2{
+						.dropdown-menu-list{
+							padding: 25px !important;
+						}
+					}
+				}
 				.primary-logo{ margin: 0 90px !important;}
 			}
 		}
 	}
+	.header-bottom{
+		.header-bottom-st2-wrapper{
+			.header-bottom-st2-inner{
+				.st2-hamadryad-menu{
+					.st2-menu-primary{
+						.st2-li-primary{
+							.st2-hamadryad-megamenu{
+								.st2-hamadryad-megamenu-modal{
+									padding: 0px 25px 25px !important;
+								}
+							}
+							.dropmenu-v2{
+								.dropdown-menu-list{ padding: 25px;}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
-
-
 @media (max-width: 1280px) {
 	.header-menu{
 		.menu-left{
@@ -3598,7 +3657,6 @@ a{
 	}
 	.menu-st1{ top: 35px;}
 }
-
 @media (min-width: 1281px) {
 	.container{
 		width: 1530px;
@@ -3618,7 +3676,6 @@ a{
 	.modal { top: 255px !important;}
   
 }
-
 @media (max-width: 1199px){
 	.container { max-width: 100%;}
 	.d-none-19{ display: none !important;}
@@ -3632,7 +3689,6 @@ a{
 		max-width: 100%;
 	}
 }
-
 @media (max-width: 1024px){
 	.hide-laptop{ display: none !important;}
 	.t-center-laptop{ text-align: center;}
@@ -3777,7 +3833,6 @@ a{
 		}
 	}
 }
-
 @media (max-width: 1023px){
 	.footer-info{
 		line-height: 40px !important;
@@ -3808,7 +3863,6 @@ a{
 		}
 	}
 }
-
 @media (max-width: 992px){
 	.f-content-st2{ padding-top: 30px;}
 	.flex-custom{
@@ -3828,12 +3882,22 @@ a{
 		.st3-banner{ padding-top: 25px;}
 	}
 }
-
 @media (max-width: 768px){
 	.hide-tablet{ display: none;}
 	.newsletter-form{
 		text-align: center;
 		.newsletter-form-inp{ margin: 0 0 30px !important;}
+	}
+	.categories{
+		margin: 50px 0;
+		.categories-item{
+			.categories-info{
+				.categories-info-name{
+					font-size: 25px;
+					margin-bottom: 10px;
+				}
+			}
+		}
 	}
 	.custom-col-pt{ text-align: center; }
 	.slide-wrapper{
@@ -4050,10 +4114,8 @@ a{
 		}
 	}
 }
-
 @media (max-width: 767px){
 	.d-none-67px{ display: none !important;}
-	.categories{ display: none;}
 	.t-center-laptop{ text-align: left;}
 	.pd-67px-0{
 		padding-left: 0 !important;
@@ -4176,7 +4238,6 @@ a{
 	}
 	.menu-st1{ margin: 0 15px; top: 15px;}
 }
-
 @media (max-width: 576px){
 	.pd-sm-25{ padding-top: 25px;}
 	.box-item{ 
@@ -4206,7 +4267,6 @@ a{
 		}
 	}
 }
-
 @media (max-width: 425px){
 	.instagram-btn{
 		width: 75%;
@@ -4334,7 +4394,6 @@ a{
 		}
 	}
 }
-
 @media (min-width: 1281px) and (max-width: 1500px) {
 	.st3-banner-poundersay{
 		.poundersay{
@@ -4354,7 +4413,6 @@ a{
 		}
 	}
 }
-
 @media (min-width: 1024px) and (max-width: 1280px) {
 	.payment-text, .social-text{ display: none;}
 	.cl-md-w2-12{
@@ -4363,7 +4421,6 @@ a{
         max-width: 100%;
 	}
 }
-
 @media (min-width: 768px) and (max-width: 1280px) {
 	.st3-support{
 		.st3-flex-custom{ display: block; text-align: center;}
@@ -4418,12 +4475,10 @@ a{
 		}
 	}
 }
-
 @media (min-width: 1025px) and (max-width: 1280px) {
 	.icon-social{ &:first-child{ padding-left: 0px !important; } }
   
 }
-
 @media (min-width: 375px) and (max-width: 1024px){
 	.testimonial{
 		.testimonial-wrapper{
@@ -4435,7 +4490,6 @@ a{
 		} 
 	} 
 }
-
 @media (min-width: 769px) and (max-width: 1024px){
 	.blogn-v1-recentposts-list{
 		.blogn-v1-recentposts-item{

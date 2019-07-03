@@ -154,12 +154,69 @@ $(document).on('click', '.st3-categories-item .st3-categories-icon', function (e
     return false;
 });
 
-// Sider Page1
-$('.slide-homepage').slick({
-    dots: false,
-    arrows: false,
-    autoplay: false,
-    autoplaySpeed:1500
+// Slide Page 1
+function slideShow1() {
+    var $status = $('.pagingInfo');
+    var $slickElement = $('.slide-homepage');
+    $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
+    //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $status.html('<div class="pagingInfo">0' + i + '</div>');
+    });
+    $('.slide-homepage').on('afterChange', function(event, slick, currentSlide) {
+    $('.slick-active').append('<div class="pagingInfo"');
+    });
+
+    $('.slide-homepage').slick({
+        dots:false,
+        arrows: true,
+        infinite: true,
+        autoplay: true,
+        asNavFor: '.js-bg-slide-homepage1, .js-slide-avatar',
+        autoplaySpeed:5000,
+        slidesToShow: 1,
+        speed: 1000,
+        fade: false,
+        customPaging : function(slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        return '<a>0'+(i+1)+'</a>';
+        },
+    });
+
+    $('.js-bg-slide-homepage1').slick({
+        dots:false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        asNavFor: '.slide-homepage, .js-slide-avatar',
+        autoplaySpeed:5000,
+        slidesToShow: 1,
+        speed: 1000,
+        fade: false,
+    });
+
+    $('.js-slide-avatar').slick({
+        dots:false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        asNavFor: '.slide-homepage, .js-bg-slide-homepage1',
+        autoplaySpeed:5000,
+        slidesToShow: 1,
+        speed: 1000,
+        fade: false,
+    });
+}
+slideShow1();
+
+$('.js-slide-previous').on('click', function(e){
+    $('.slick-prev').click();
+    e.preventDefault(); 
+});
+
+$('.js-slide-next').on('click', function(e){
+    $('.slick-next').click();
+    e.preventDefault(); 
 });
 
 // Sider Page3
@@ -434,23 +491,21 @@ $('.close-popup').on('click', function(event) {
 // List - Gird Shop Page Fullwidth
 $('.list-js').on('click', function(event) {
     $('.box-item-list-shoppage').addClass('item-list-shoppage');
-    $('.layout').removeClass("col-xl-3 col-md-6 col-lg-4 col-sm-6 col-12").delay(10).queue(function(next){   
+    $('.layout').removeClass("col-xl-3 col-md-6 col-lg-4 col-sm-6 col-12 transition-06").delay(10).queue(function(next){   
         $(this).addClass("col-xl-6 col-lg-6 col-md-6 col-custom-12 col-sm-12 col-12 list-pb");
         next();
     });
 });
 $('.grid-js').on('click', function(event) {
     $(".box-item-list-shoppage").removeClass('item-list-shoppage');
-    $('.layout').removeClass("col-xl-6 col-lg-6 col-md-6 col-custom-12 col-sm-12 col-12 list-pb").delay(10).queue(function(next){   
-        $(this).addClass("col-xl-3 col-md-6 col-lg-4 col-sm-6 col-12");
-        next();
-    });
+    $('.layout').removeClass("col-xl-6 col-lg-6 col-md-6 col-custom-12 col-sm-12 col-12 list-pb");
+    $('.layout').addClass("col-xl-3 col-md-6 col-lg-4 col-sm-6 col-12 transition-06");
 });
 
 // List - Gird Shop Page Fullwidth Sidebar Left
 $('.sidebarleft-list-js').on('click', function(event) {
     $('.box-item-list-shoppage').addClass('item-list-shoppage');
-    $('.sidebar-left-layout').removeClass("col-xl-4 col-md-6 col-lg-4 col-sm-12 col-12").delay(10).queue(function(next){   
+    $('.sidebar-left-layout').removeClass("col-xl-4 col-md-6 col-lg-4 col-sm-12 col-12 transition-05").delay(10).queue(function(next){   
         $(this).addClass("col-xl-12 col-lg-12 col-md-12 list-pb");
         next();
     });
@@ -458,7 +513,7 @@ $('.sidebarleft-list-js').on('click', function(event) {
 $('.sidebarleft-grid-js').on('click', function(event) {
     $(".box-item-list-shoppage").removeClass('item-list-shoppage');
     $('.sidebar-left-layout').removeClass("col-xl-12 col-lg-12 col-md-12 list-pb").delay(10).queue(function(next){   
-        $(this).addClass("col-xl-4 col-md-6 col-lg-4 col-sm-12 col-12");
+        $(this).addClass("col-xl-4 col-md-6 col-lg-4 col-sm-12 col-12 transition-05");
         next();
     });
 });
@@ -502,7 +557,7 @@ function setWidthFollowScreen(selector,compare,sub1,dad,sub2) {
         }
     })
 }
-setWidthFollowScreen('.js-dropmenu','.js-compare','160','.js-dad','80');
+setWidthFollowScreen('.js-dropmenu','.js-compare','260','.js-dad','80');
 
 // Popup auto show
 setTimeout(function(){
@@ -562,4 +617,19 @@ function showSidebar() {
     })
 }
 showSidebar();
+
+// Add active class to the multi layout
+var header = document.getElementById("multiLayout");
+var btns = header.getElementsByClassName("view-icon");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("actived");
+  console.log(current);
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" actived", "");
+  }
+  this.className += " actived";
+  });
+}
+
 });

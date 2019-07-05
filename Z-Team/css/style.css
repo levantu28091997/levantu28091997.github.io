@@ -323,7 +323,7 @@ a {
         font-family: "Montserrat", sans-serif;
         text-transform: uppercase; }
 
-/** work **/
+/** Work **/
 .work .work-wrapper .work-item .work-item__box {
   position: relative;
   overflow: hidden; }
@@ -367,6 +367,67 @@ a {
   .work .work-wrapper .work-loadmore:hover {
     color: #10c9c3;
     transition: .5s; }
+
+/** Our services **/
+.our-services {
+  margin: 100px 0 60px 0; }
+  .our-services .our-services-wrapper .our-services-heading .os-heading-inner {
+    text-align: center; }
+    .our-services .our-services-wrapper .our-services-heading .os-heading-inner .os-heading__title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      color: #191919;
+      padding-bottom: 40px; }
+    .our-services .our-services-wrapper .our-services-heading .os-heading-inner .os-heading__des {
+      font-size: 16px; }
+  .our-services .our-services-wrapper .our-services-bottom {
+    padding-top: 60px; }
+    .our-services .our-services-wrapper .our-services-bottom .our-services-item {
+      text-align: center;
+      padding-bottom: 40px; }
+      .our-services .our-services-wrapper .our-services-bottom .our-services-item .os-item__icon {
+        font-size: 48px;
+        color: #656565; }
+      .our-services .our-services-wrapper .our-services-bottom .our-services-item .os-item__title {
+        font-size: 12px;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        color: #191919;
+        padding: 5px 0 10px 0; }
+      .our-services .our-services-wrapper .our-services-bottom .our-services-item .os-item_des {
+        font-size: 16px; }
+
+/** Testimonials **/
+.testimonials .testimonials-wrapper {
+  background: url("../images/career-banner.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  padding: 200px 0; }
+  .testimonials .testimonials-wrapper.overlay {
+    position: relative; }
+    .testimonials .testimonials-wrapper.overlay::before {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: 0;
+      background-color: rgba(0, 0, 0, 0.5); }
+  .testimonials .testimonials-wrapper .testimonials-item {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-align: center; }
+    .testimonials .testimonials-wrapper .testimonials-item .testimonials__text {
+      font-size: 24px;
+      padding-bottom: 22px; }
+    .testimonials .testimonials-wrapper .testimonials-item .testimonials__author {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #10c9c3;
+      font-weight: 700; }
 
 /** Footer **/
 .footer .footer-info {

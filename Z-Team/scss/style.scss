@@ -397,7 +397,7 @@ a{
 	}
 }
 
-/** work **/
+/** Work **/
 .work{
 	.work-wrapper{
 		.work-item{
@@ -457,6 +457,89 @@ a{
 		}
 	}
 }
+
+/** Our services **/
+.our-services{
+	margin: 100px 0 60px 0;
+	.our-services-wrapper{
+		.our-services-heading{
+			.os-heading-inner{
+				text-align: center;
+				.os-heading__title{
+					font-family: $fontM;
+					font-size: 30px;
+					color: #191919;
+					padding-bottom: 40px;
+				}
+				.os-heading__des{
+					font-size: 16px;
+				}
+			}
+		}
+		.our-services-bottom{
+			padding-top: 60px;
+			.our-services-item{
+				text-align: center;
+				padding-bottom: 40px;
+				.os-item__icon{
+					font-size: 48px;
+					color: #656565;
+				}
+				.os-item__title{
+					font-size: 12px;
+					font-family: $fontM;
+					text-transform: uppercase;
+					color: #191919;
+					padding: 5px 0 10px 0;
+				}
+				.os-item_des{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+/** Testimonials **/
+.testimonials{
+	.testimonials-wrapper{
+		background: url('../images/career-banner.jpg') no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+		padding: 200px 0;
+		&.overlay{
+			position: relative;
+			&::before{
+				position: absolute;
+				content:" ";
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				display: block;
+				z-index:0;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		}
+		.testimonials-item{
+			font-family: $fontM;
+			color: #fff;
+			text-align: center;
+			.testimonials__text{
+				font-size: 24px;
+				padding-bottom: 22px;
+			}
+			.testimonials__author{
+				font-size: 12px;
+				text-transform: uppercase;
+				color: $colorBg;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
 /** Footer **/
 .footer{
 	.footer-info{

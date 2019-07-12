@@ -5,6 +5,11 @@ var wH;
 function heightSlide(){
     wH = $(window).height();
     $('.fix_h').css({'height':wH+'px'});
+
+    $(window).resize(function(){
+      wH = $(window).height();
+      $('.fix_h').css({'height':wH+'px'});
+    });
 }
 heightSlide();
 
@@ -15,13 +20,13 @@ $(function () {
 
 // Testimonials
 $('.js-testimonials').slick({
-  dots: false,
+  dots: true,
   infinite: true,
   slidesToShow: 1,
   arrows: false,
   slidesToScroll: 1,
-  autoplay: true,
-  speed: 300
+  autoplay: false,
+  speed: 500
 });
 
 // Counter
@@ -40,6 +45,53 @@ $('.js-counter-feedback').counterUp({
 $('.js-counter-client').counterUp({
   delay: 20,
   time: 1000
+});
+
+function scrollMenu(){
+  var menu = document.querySelectorAll('div.header-wrapper');
+  var menu = menu[0];
+      //Truy xuất div menu
+      var status="duoi100";
+  window.addEventListener("scroll",function(){
+      var x = pageYOffset;
+      if(x > 95){
+          if(status == "duoi100")
+          {
+              status="tren100";
+              menu.classList.add('active');
+          }
+      }
+      else{
+          if(status=="tren100"){
+          menu.classList.remove('active');
+          status="duoi100";}
+      }
+  })
+}
+scrollMenu();
+
+// Scrool To Top
+$(window).scroll(function(){ 
+  if ($(this).scrollTop() > 200) { //thực hiện lệnh điều kiện Khi lăn chuột xuống dưới hơn 200px
+    $('#scroll-to-top').fadeIn();
+  } else { 
+    $('#scroll-to-top').fadeOut();
+  } 
+}); 
+$('#scroll-to-top').click(function(){ 
+  $("html, body").animate({ scrollTop: 0 }, 700); //Animation
+  return false; 
+});
+
+// Menu mobie
+$('.js-menu-mobie').on('click', function(event) {
+  $(".offcanvas-collapse").addClass('open')
+  $(".menu-overlay").fadeIn();
+  event.preventDefault()
+});
+$(".menu-overlay").click(function(event) {
+  $(".offcanvas-collapse").removeClass('open')
+  $(".menu-overlay").fadeOut();
 });
 
 });

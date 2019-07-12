@@ -7,6 +7,7 @@
 	
 	<!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Nunito+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
 
   <!-- Library -->
@@ -23,7 +24,7 @@
     <!-- Header -->
     <header>
       <div class="header-wrapper">
-        <div class="container">
+        <div class="container container-full">
           <div class="header-inner">
             <a class="logo-header" href="#">
               <img src="images/logo.png" alt="Logo">
@@ -37,9 +38,41 @@
               <li class="menu-header__item"><a href="" class="menu-header__link">testimonials</a></li>
               <li class="menu-header__item"><a href="" class="menu-header__link">contact</a></li>
             </ul>
+            <div class="icon-menu-mobie js-menu-mobie">
+              <i class="pe-7s-menu"></i>
+            </div>
           </div>
         </div>
       </div>
+      <!-- menu mobie -->
+      <div class="offcanvas-collapse">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav fa-ul">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html"><i class="fa fa-fw fa-id-card-o"></i>About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-services.html"><i class="fa fa-fw fa-server"></i>Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-products.html"><i class="fa fa-fw fa-desktop"></i>Our Products</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav fa-ul">
+            <li class="nav-item">
+              <a class="nav-link" href="tel:+84914731527"><i class="fa fa-fw fa-phone"></i>+(84)914.731.527</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:levantu.nd1997@gmail.com"><i class="fa fa-fw fa-envelope-open-o"></i>levantu.nd1997@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-overlay"></div>
+
     </header>
 
     <!-- Main-content -->
@@ -108,7 +141,7 @@
       <section class="skills">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xl-6 skills-bg">
+            <div class="col-xl-6 col-lg-6 skills-bg">
               <div class="skills-wrapper">
                 <h2 class="skill-title">Professional Skills</h2>
                 <ul class="list-skills">
@@ -145,7 +178,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-xl-6 framework-bg p-0">
+            <div class="col-xl-6 col-lg-6 framework-bg p-0">
               <div class="framework">
                 <div class="box-item">
                   <div class="slide-box">
@@ -198,7 +231,7 @@
         <div class="number-wrapper">
           <div class="container">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="number-item">
                   <i class="pe-7s-portfolio number-icon"></i>
                   <div class="number-content align-self-center">
@@ -207,7 +240,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="number-item">
                   <i class="pe-7s-clock number-icon"></i>
                   <div class="number-content align-self-center">
@@ -216,7 +249,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="number-item">
                   <i class="pe-7s-star number-icon"></i>
                   <div class="number-content align-self-center">
@@ -225,7 +258,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="number-item">
                   <i class="pe-7s-like number-icon"></i>
                   <div class="number-content align-self-center">
@@ -341,7 +374,9 @@
                 </div>
               </div>
             </div>
-            <a href="" class="work-loadmore">load more work</a>
+            <div class="row">
+              <a href="" class="work-loadmore">load more work</a>
+            </div>
           </div>
         </div>
       </section>
@@ -362,56 +397,56 @@
             </div>
             <div class="our-services-bottom">
               <div class="row">
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="our-services-item">
                     <span class="os-item__icon"><i class="pe-7s-diamond"></i></span>
                     <h2 class="os-item__title">ui / ux design</h2>
                     <p class="os-item_des">Be set fourth land god darkness  make it wherein own</p>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="our-services-item">
                     <span class="os-item__icon"><i class="pe-7s-arc"></i></span>
                     <h2 class="os-item__title">web development</h2>
                     <p class="os-item_des">A she'd them bring void moving  third she'd kind fill</p>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="our-services-item">
                     <span class="os-item__icon"><i class="pe-7s-phone"></i></span>
                     <h2 class="os-item__title">app / mobile</h2>
                     <p class="os-item_des">Dominion man second spirit he, earth they're creeping</p>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="our-services-item">
                     <span class="os-item__icon"><i class="pe-7s-joy"></i></span>
                     <h2 class="os-item__title">game design</h2>
                     <p class="os-item_des">Morning his saying moveth it  multiply appear life be</p>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="our-services-item">
                     <span class="os-item__icon"><i class="pe-7s-plane"></i></span>
                     <h2 class="os-item__title">SEO / marketing</h2>
                     <p class="os-item_des">Give won't after land fill creeping  meat you, may</p>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="our-services-item">
                     <span class="os-item__icon"><i class="pe-7s-star"></i></span>
                     <h2 class="os-item__title">photography</h2>
                     <p class="os-item_des">Creepeth one seas cattle grass  give moving saw give</p>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="our-services-item">
                     <span class="os-item__icon"><i class="pe-7s-magic-wand"></i></span>
                     <h2 class="os-item__title">graphic design</h2>
                     <p class="os-item_des">Open, great whales air rule for,  fourth life whales</p>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                   <div class="our-services-item">
                     <span class="os-item__icon"><i class="pe-7s-paint-bucket"></i></span>
                     <h2 class="os-item__title">illustrations</h2>
@@ -461,7 +496,47 @@
         </div>
       </section>
 
+      <!-- Contact -->
+      <section class="contact">
+        <div class="contact-wrapper">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 p-0">
+                <div class="split-left">
+                  <h3 class="split-left__title">Contact</h3>
+                  <p class="split-left__des">GET IN TOUCH WITH US</p>
+                  <form id="contact-form" class="checkform" action="" target="" method="post">
+                    <div class="form-row clearfix">
+                      <label for="name" class="req">Name <span class="not-null">*</span></label>
+                      <input type="text" name="name" class="name" id="name" value="" placeholder="Your name...">
+                    </div>
+                    <div class="form-row clearfix">
+                      <label for="email" class="req">Email <span class="not-null">*</span></label>
+                      <input type="text" name="email" class="email" id="email" value="" placeholder="Address email...">
+                    </div>
+                    <div class="form-row clearfix textbox">
+                      <label for="message" class="req">Message <span class="not-null">*</span></label>
+                      <textarea name="message" class="message" id="message" rows="15" cols="50" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-row form-submit">
+                      <input type="submit" name="submit_form" class="submit" value="Send">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6 p-0">
+                <div class="split-right">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.1364784598127!2d105.77617081445524!3d21.06721059184149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134552c72eb9b5f%3A0x9c84e103e69e4c95!2zTmfDtSA0MDEgxJDGsOG7nW5nIEPhu5UgTmh14bq_LCBD4buVIE5odeG6vyAyLCBC4bqvYyBU4burIExpw6ptLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1562346249777!5m2!1svi!2s" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  <div class="map-overlay"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
+
     <!-- Footer -->
     <footer>
       <div class="footer">
@@ -475,9 +550,6 @@
                   <p class="footer-info__intro-des">
                     Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.
                   </p>
-                  <a href="" class="footer-info__intro-link">More about us 
-                    <span class="icon-more"><img src="images/icon/icon-right.png" alt="More about us"></span>
-                  </a>
                 </div>
               </div>
               <div class="col-md-3">
@@ -599,6 +671,11 @@
         </div>
       </div>
     </footer>
+
+    <!-- Scroll up -->
+    <div class="scroll-to-top" id="scroll-to-top">
+      <img src="images/icon/icon-scroll-up.png" alt="Scroll to top" id="js-scroll-to-top">
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -419,6 +419,7 @@ a{
 					height: 70%;
 					text-align: center;
 					z-index: 2;
+					overflow: auto;
 					.title{
 						font-size: 30px;
 						font-family: $fontM;

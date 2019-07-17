@@ -1,17 +1,17 @@
 $(document).ready(function(){
 "use strict";
-var wH;
+// var wH;
 // SETTING
-function heightSlide(){
-    wH = $(window).height();
-    $('.fix_h').css({'height':wH+'px'});
+// function heightSlide(){
+//     wH = $(window).height() + 15;
+//     $('.fix_h').css({'height':wH+'px'});
 
-    $(window).resize(function(){
-      wH = $(window).height();
-      $('.fix_h').css({'height':wH+'px'});
-    });
-}
-heightSlide();
+//     $(window).resize(function(){
+//       wH = $(window).height();
+//       $('.fix_h').css({'height':wH+'px'});
+//     });
+// }
+// heightSlide();
 
 // Tooltip
 $(function () {
@@ -29,22 +29,15 @@ $('.js-testimonials').slick({
   speed: 500
 });
 
-// Counter
-$('.js-counter-pro').counterUp({
-  delay: 20,
-  time: 1000
-});
-$('.js-counter-hours').counterUp({
-  delay: 20,
-  time: 1000
-});
-$('.js-counter-feedback').counterUp({
-  delay: 20,
-  time: 1000
-});
-$('.js-counter-client').counterUp({
-  delay: 20,
-  time: 1000
+// Slide
+$('.js-slide').slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 1,
+  arrows: false,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 900
 });
 
 function scrollMenu(){
@@ -92,6 +85,24 @@ $('.js-menu-mobie').on('click', function(event) {
 $(".menu-overlay").click(function(event) {
   $(".offcanvas-collapse").removeClass('open')
   $(".menu-overlay").fadeOut();
+});
+
+// Counter
+$('.js-counter-pro').counterUp({
+  delay: 20,
+  time: 1000
+});
+$('.js-counter-hours').counterUp({
+  delay: 20,
+  time: 1000
+});
+$('.js-counter-feedback').counterUp({
+  delay: 20,
+  time: 1000
+});
+$('.js-counter-client').counterUp({
+  delay: 20,
+  time: 1000
 });
 
 });

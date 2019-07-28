@@ -201,4 +201,17 @@ $(document).ready(function(){
     }
   });
 
+  // Scrool To Top
+  $(window).scroll(function(){ 
+    if ($(this).scrollTop() > 200) { //thực hiện lệnh điều kiện Khi lăn chuột xuống dưới hơn 200px
+      $('#scroll-to-top').fadeIn();
+    } else { 
+      $('#scroll-to-top').fadeOut();
+    } 
+  }); 
+  $('#scroll-to-top').click(function(){ 
+    $("html, body").animate({ scrollTop: 0 }, 1200); //Animation
+    return false; 
+  });
+
 });

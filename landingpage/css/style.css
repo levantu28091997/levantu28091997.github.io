@@ -919,6 +919,24 @@ p + p {
         .wrap-footer-v1-h1 .wrap-footer-v1-h1-down .footer-privacy ul li:last-child {
           padding-right: 0; }
 
+/** Scrool to top **/
+#scroll-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 22px;
+  right: 20px;
+  background: #3c5065;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 3px;
+  opacity: .6;
+  z-index: 999; }
+  #scroll-to-top:hover {
+    background: #506a85;
+    transition: .5s; }
+  #scroll-to-top i {
+    font-size: 20px; }
+
 /** 6.	     Reponsive **/
 @media (max-width: 1199px) {
   .js-menu-mobie {

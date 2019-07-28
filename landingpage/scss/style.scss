@@ -1130,6 +1130,25 @@ p + p {
 	}			
 }
 
+/** Scrool to top **/
+#scroll-to-top{
+	cursor: pointer;
+    position: fixed;
+    bottom: 22px;
+    right: 20px;
+    background: #3c5065;
+    color: #fff;
+    padding: 8px 12px;
+	border-radius: 3px;
+	opacity: .6;
+	z-index: 999;
+	&:hover{
+		background: #506a85;
+		transition: .5s;
+	}
+	i{ font-size: 20px;}
+}
+
 /** 6.	     Reponsive **/
 @media (max-width: 1199px){
 	.js-menu-mobie{ display: block !important; }

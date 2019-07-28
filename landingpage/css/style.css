@@ -198,6 +198,8 @@ p + p {
       margin-left: 35px; }
       .nav-wrap .navbar-nav li.active a::before {
         opacity: 1; }
+      .nav-wrap .navbar-nav li:hover a::before {
+        opacity: 1; }
       .nav-wrap .navbar-nav li a {
         color: #fff;
         font-size: 16px;

@@ -225,6 +225,13 @@ p + p {
 					}
 				}
 			}
+			&:hover{
+				a{
+					&::before{
+						opacity: 1;
+					}
+				}
+			}
 			a{
 				color: #fff;
 				font-size: 16px;

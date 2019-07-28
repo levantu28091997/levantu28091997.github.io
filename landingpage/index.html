@@ -7,11 +7,11 @@
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,13 +19,120 @@
 
     <title>Home Page | Landingpage</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#myNav" data-offset="50">
     <!-- header -->
-    <header></header>
+    <header class="header-block">
+      <div class="nav-bar-wrap">
+        <div class="nav-bar-inner">
+          <div class="nav-bar-panel">
+            <a href="">
+              <img src="images/logo-180x40.png" alt="Logo">
+            </a>
+          </div>
+          <div class="nav-wrap" id="myNav">
+            <ul class="navbar-nav">
+              <li class="nav-li active"><a href="#home">Home</a></li>
+              <li class="nav-li"><a href="#about-us">About us</a></li>
+              <li class="nav-li"><a href="#services">Services</a></li>
+              <li class="nav-li"><a href="#our-team">Our team</a></li>
+              <li class="nav-li"><a href="#pricing">Pricing</a></li>
+              <li class="nav-li"><a href="#testimonials">Testimonials</a></li>
+              <li class="nav-li"><a href="#join-us">Join Us</a></li>
+            </ul>
+          </div>
+          <div class="icon-menu-mobie js-menu-mobie">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <!-- menu mobie -->
+      <div class="offcanvas-collapse">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav fa-ul">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-products.html"><i class="fa fa-fw fa-id-card-o"></i>About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-services.html"><i class="fa fa-fw fa-server"></i>Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html"><i class="fa fa-fw fa-desktop"></i>Our team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html"><i class="fa fa-object-group"></i>Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html"><i class="fa fa-users"></i>Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html"><i class="fa fa-wpforms"></i>Join Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav fa-ul">
+            <li class="nav-item">
+              <a class="nav-link" href="tel:+84914731527"><i class="fa fa-fw fa-phone"></i>+(84)914.731.527</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:levantu.nd1997@gmail.com"><i class="fa fa-fw fa-envelope-open-o"></i>levantu.nd1997@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-overlay"></div>
+    </header>
     <!-- Main content -->
 
+    <!-- slide -->
+    <section class="slide-block">
+      <div class="slide-wrapper">
+        <div class="list-slide">
+          <div class="js-slide owl-carousel owl-theme">
+            <div class="slide-item">
+              <div class="slide-item__img">
+                <img src="images/slide/home-slide-1-1920x600.jpg" alt="Slide" class="img-width100">
+              </div>
+              <div class="container">
+                <div class="slide-item__content">
+                  <h1 class="slide__title">
+                      Customer Service
+                      <br>
+                      Is Our #1 Priority!
+                  </h1>
+                  <p class="slide__des">Our team is always ready to provide high-quality customer service</p>
+                  <div class="slide-btn">
+                    <a href="#" class="slide__link">order diagnostics</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide-item">
+              <div class="slide-item__img">
+                <img src="images/slide/home-slide-2-1920x600.jpg" alt="Slide" class="img-width100">
+              </div>
+              <div class="container">
+                <div class="slide-item__content">
+                  <h1 class="slide__title">
+                      Customer Service
+                      <br>
+                      Is Our #1 Priority!
+                  </h1>
+                  <p class="slide__des">Our team is always ready to provide high-quality customer service</p>
+                  <div class="slide-btn">
+                    <a href="#" class="slide__link">order diagnostics</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- about us -->
-    <section class="aboutus-block">
+    <section class="aboutus-block" id="about-us">
       <div class="aboutus-wrapper">
         <div class="container">
           <div class="row">
@@ -61,7 +168,7 @@
       <div class="number-wrapper">
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-xl-3 col-lg-6 col-sm-6">
               <div class="number-item">
                 <i class="flaticon-like"></i>
                 <div class="counter-value">
@@ -76,7 +183,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-xl-3 col-lg-6 col-sm-6">
               <div class="number-item">
                 <i class="flaticon-small-calendar"></i>
                 <div class="counter-value">
@@ -90,7 +197,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-xl-3 col-lg-6 col-sm-6">
               <div class="number-item">
                 <i class="flaticon-user-avatar"></i>
                 <div class="counter-value">
@@ -104,7 +211,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-xl-3 col-lg-6 col-sm-6">
               <div class="number-item">
                 <i class="flaticon-television-outline"></i>
                 <div class="counter-value">
@@ -124,7 +231,7 @@
     </section>
 
     <!-- services -->
-    <section class="services-block">
+    <section class="services-block" id="services">
         <div class="services-wrapper">
           <div class="services-heading">
             <div class="container">
@@ -138,7 +245,7 @@
           <div class="services-content">
             <div class="services-list">
               <div class="container">
-                  <div class="js-services-list owl-carousel owl-theme">
+                  <div class="js-services-list owl-carousel">
                     <div class="services-item-wrap">
                       <div class="services-item">
                         <a href="#" class="item-image">
@@ -191,6 +298,19 @@
                         </div>
                       </div>
                     </div>
+                    <div class="services-item-wrap">
+                      <div class="services-item">
+                        <a href="#" class="item-image">
+                          <img src="images/services/home-4-223x227.jpg" alt="Services" width="223" height="227">
+                        </a>
+                        <div class="item-caption">
+                          <div class="divider divider-center"></div>
+                          <h5 class="item-title">
+                            <a href="#">Washer Repair</a>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
                   </div>
               </div>
             </div>
@@ -199,14 +319,358 @@
     </section>
 
     <!-- our team -->
-    <section class="our-team-block">
+    <section class="our-team-block" id="our-team">
       <div class="our-team-wrapper">
-
+        <div class="container">
+            <div class="row">
+              <div class="our-team-heading">
+                <h2 class="our-team__title">Our Team</h2>
+                <div class="divider divider-center"></div>
+              </div>
+            </div>
+          <div class="row list-out-team">
+            <div class="col-xl-4 col-lg-6 col-sm-6">
+              <div class="box-item">
+                <div class="thumb-image">
+                  <img src="images/our-team/team-5-370x370.jpg" alt="Our team">
+                </div>
+                <div class="our-team-info">
+                  <h4 class="author">Thomas Hanson</h4>
+                  <p class="position">Electrician</p>
+                  <ul class="list-social">
+                    <li class="social-item facebook">
+                      <a href="" class="fa fa-facebook"></a>
+                    </li>
+                    <li class="social-item twitter">
+                      <a href="" class="fa fa-twitter"></a>
+                    </li>
+                    <li class="social-item google-plus">
+                      <a href="" class="fa fa-google-plus"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-sm-6">
+              <div class="box-item">
+                <div class="thumb-image">
+                  <img src="images/our-team/team-6-370x370.jpg" alt="Our team">
+                </div>
+                <div class="our-team-info">
+                  <h4 class="author">Adam Fowler</h4>
+                  <p class="position">Plumber</p>
+                  <ul class="list-social">
+                    <li class="social-item facebook">
+                      <a href="" class="fa fa-facebook"></a>
+                    </li>
+                    <li class="social-item twitter">
+                      <a href="" class="fa fa-twitter"></a>
+                    </li>
+                    <li class="social-item google-plus">
+                      <a href="" class="fa fa-google-plus"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-sm-6">
+              <div class="box-item">
+                <div class="thumb-image">
+                  <img src="images/our-team/team-7-370x370.jpg" alt="Our team">
+                </div>
+                <div class="our-team-info">
+                  <h4 class="author">Phillip Miller</h4>
+                  <p class="position">Serviceman</p>
+                  <ul class="list-social">
+                    <li class="social-item facebook">
+                      <a href="" class="fa fa-facebook"></a>
+                    </li>
+                    <li class="social-item twitter">
+                      <a href="" class="fa fa-twitter"></a>
+                    </li>
+                    <li class="social-item google-plus">
+                      <a href="" class="fa fa-google-plus"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- manufacturers -->
+    <section class="manufacturers-block">
+      <div class="manufacturers-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="manufacturers-heading">
+                <h2 class="manufacturers__title">Manufacturers</h2>
+                <div class="divider divider-center"></div>
+            </div>
+          </div>
+          <div class="manufacturers-list">
+            <div class="js-manufacturers owl-carousel owl-theme">
+              <div class="manufacturers-item">
+                <a href="#">
+                  <img src="images/manufacturers/home-11-184x54.png" alt="Manufacturers">
+                </a>
+              </div>
+              <div class="manufacturers-item">
+                <a href="#">
+                  <img src="images/manufacturers/home-7-184x54.png" alt="Manufacturers">
+                </a>
+              </div>
+              <div class="manufacturers-item">
+                <a href="#">
+                  <img src="images/manufacturers/home-8-184x54.png" alt="Manufacturers">
+                </a>
+              </div>
+              <div class="manufacturers-item">
+                <a href="#">
+                  <img src="images/manufacturers/home-9-184x54.png" alt="Manufacturers">
+                </a>
+              </div>
+              <div class="manufacturers-item">
+                <a href="#">
+                  <img src="images/manufacturers/home-7-184x54.png" alt="Manufacturers">
+                </a>
+              </div>
+              <div class="manufacturers-item">
+                <a href="#">
+                  <img src="images/manufacturers/home-11-184x54.png" alt="Manufacturers">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+
+    <!-- pricing -->
+    <section class="pricing-block" id="pricing">
+      <div class="pricing-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="pricing-heading">Pricing</h2>
+              <hr>
+            </div>
+          </div>
+          <div class="pricing-list">
+            <div class="row">
+              <div class="col-xl-3 col-lg-6 col-sm-6">
+                <div class="pricing-item-wrap">
+                  <div class="pricing-item">
+                    <div class="pricing-table-header">
+                      <h6 class="pricing-table-title">Ultimate</h6>
+                      <p class="price">$59.00</p>
+                    </div>
+                    <div class="pricing-table-body">
+                      <ul class="list-bordered">
+                        <li><a href="#">Free Consultation</a></li>
+                        <li><a href="#">Electrical Repair</a></li>
+                        <li><a href="#">Annual Servicing</a></li>
+                        <li><a href="#">Plumber Services</a></li>
+                      </ul>
+                    </div>
+                    <div class="pricing-table-footer">
+                      <a href="" class="pricing-link">sign up</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-sm-6">
+                <div class="pricing-item-wrap">
+                  <div class="pricing-item">
+                    <div class="pricing-table-header active">
+                      <h6 class="pricing-table-title">Professional</h6>
+                      <p class="price">$33.00</p>
+                    </div>
+                    <div class="pricing-table-body">
+                      <ul class="list-bordered">
+                        <li><a href="#">Online Consultation</a></li>
+                        <li><a href="#">Range Repair</a></li>
+                        <li><a href="#">Replacement Parts</a></li>
+                        <li><a href="#">Electrician Services</a></li>
+                      </ul>
+                    </div>
+                    <div class="pricing-table-footer">
+                      <a href="" class="pricing-link">sign up</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-sm-6">
+                <div class="pricing-item-wrap">
+                  <div class="pricing-item">
+                    <div class="pricing-table-header">
+                      <h6 class="pricing-table-title">Standard</h6>
+                      <p class="price">$19.00</p>
+                    </div>
+                    <div class="pricing-table-body">
+                      <ul class="list-bordered">
+                        <li><a href="#">Paid Consultation</a></li>
+                        <li><a href="#">Professional Assistance</a></li>
+                        <li><a href="#">Free Tutorials</a></li>
+                        <li><a href="#">Equipment Lending</a></li>
+                      </ul>
+                    </div>
+                    <div class="pricing-table-footer">
+                      <a href="" class="pricing-link">sign up</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-sm-6">
+                <div class="pricing-item-wrap">
+                  <div class="pricing-item">
+                    <div class="pricing-table-header">
+                      <h6 class="pricing-table-title">Basic</h6>
+                      <p class="price">$9.00</p>
+                    </div>
+                    <div class="pricing-table-body">
+                      <ul class="list-bordered">
+                        <li><a href="#">Phone Consultation</a></li>
+                        <li><a href="#">Paid Tutorials</a></li>
+                        <li><a href="#">Reference Resources</a></li>
+                        <li><a href="#">Serviceman Assistance</a></li>
+                      </ul>
+                    </div>
+                    <div class="pricing-table-footer">
+                      <a href="" class="pricing-link">sign up</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <div class="testimonials-block" id="testimonials">
+      <div class="testimonials-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="testimonials-heading">
+              <h2 class="testimonials__title">Testimonials</h2>
+              <div class="divider divider-center"></div>
+            </div>
+          </div>
+          <div class="testimonials-list">
+            <div class="js-testimonials-list owl-carousel owl-theme">
+              <div class="testimonials-item-wrap">
+                <div class="testimonials-item">
+                  <div class="quote-meta">
+                    <div class="unit">
+                      <div class="unit-left">
+                        <div class="avatar">
+                          <img src="images/testimonials/home-15-47x47.jpg" alt="Avatar">
+                        </div>
+                      </div>
+                      <div class="unit-body">
+                        <h3 class="nick-name">William Wallace</h3>
+                        <p class="position">Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quote-body">
+                    <p>I highly recommend this service center. The best service I have ever received from an appliance repair company. If needed, I will definitely refer to them again for my repair needs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials-item-wrap">
+                <div class="testimonials-item">
+                  <div class="quote-meta">
+                    <div class="unit">
+                      <div class="unit-left">
+                        <div class="avatar">
+                          <img src="images/testimonials/home-14-47x47.jpg" alt="Avatar">
+                        </div>
+                      </div>
+                      <div class="unit-body">
+                        <h3 class="nick-name">Christine Bryant</h3>
+                        <p class="position">Journalist</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quote-body">
+                    <p>Thomas had a good knowledge of our LG refrigerator and easily identified why the icemaker wasn't working. He ordered the part and came back to change it and it works perfectly now. Tom and Phillip worked tirelessly to make calling them a good experience.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials-item-wrap">
+                <div class="testimonials-item">
+                  <div class="quote-meta">
+                    <div class="unit">
+                      <div class="unit-left">
+                        <div class="avatar">
+                          <img src="images/testimonials/home-13-47x47.jpg" alt="Avatar">
+                        </div>
+                      </div>
+                      <div class="unit-body">
+                        <h3 class="nick-name">Patrick Carlson</h3>
+                        <p class="position">Web Designer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quote-body">
+                    <p>Great service from this family-owned (and experienced) company! They fixed my washing machine in a timely and professional manner. I highly recommend them. Thank you for a good work, guys!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials-item-wrap">
+                <div class="testimonials-item">
+                  <div class="quote-meta">
+                    <div class="unit">
+                      <div class="unit-left">
+                        <div class="avatar">
+                          <img src="images/testimonials/home-12-47x47.jpg" alt="Avatar">
+                        </div>
+                      </div>
+                      <div class="unit-body">
+                        <h3 class="nick-name">Jennifer West</h3>
+                        <p class="position">Housewife</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quote-body">
+                    <p>Great service from this family-owned (and experienced) company! They fixed my washing machine in a timely and professional manner. I highly recommend them. Thank you for a good work, guys!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials-item-wrap">
+                <div class="testimonials-item">
+                  <div class="quote-meta">
+                    <div class="unit">
+                      <div class="unit-left">
+                        <div class="avatar">
+                          <img src="images/testimonials/home-12-47x47.jpg" alt="Avatar">
+                        </div>
+                      </div>
+                      <div class="unit-body">
+                        <h3 class="nick-name">William Wallace</h3>
+                        <p class="position">Manager</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quote-body">
+                    <p>Thomas had a good knowledge of our LG refrigerator and easily identified why the icemaker wasn't working. He ordered the part and came back to change it and it works perfectly now. Tom and Phillip worked tirelessly to make calling them a good experience.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- join our team -->
-    <section class="jot-block">
+    <section class="jot-block" id="join-us">
       <div class="jot-wrapper">
         <div class="container">
           <div class="row">
@@ -234,43 +698,84 @@
       </div>
     </section>
 
+    <!-- google map -->
+    <section class="map-block">
+      <div class="map-wraper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.1364784598127!2d105.77617081445524!3d21.06721059184149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134552c72eb9b5f%3A0x9c84e103e69e4c95!2zTmfDtSA0MDEgxJDGsOG7nW5nIEPhu5UgTmh14bq_LCBD4buVIE5odeG6vyAyLCBC4bqvYyBU4burIExpw6ptLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1562346249777!5m2!1svi!2s" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer>
-      <div class="footer-block">
-        <div class="footer-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="brand-wrap">
-                  <a href="#" class="brand">
-                    <img src="images/logo-inverse-151x38.png" alt="Logo" width="151" height="38">
-                  </a>
-                </div>
-                <div class="social-wrap">
-                  <ul class="social-list">
-                    <li class="social-item"><a class="fa fa-facebook" href=""></a></li>
-                    <li class="social-item"><a class="fa fa-twitter" href=""></a></li>
-                    <li class="social-item"><a class="fa fa-google" href=""></a></li>
-                  </ul>
-                </div>
+      <div class="wrap-footer-v1-h1">
+          <div class="container custom-container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6 col-12 footer-about">
+                      <a href="#" title="Babie Store">
+                          <img src="images/logo-inverse-151x38.png" class="img-fluid" alt="">
+                      </a>
+                      <p class="pt-lg-5 pt-3">Take a job opportunity of a lifetime - join the team of Renovate. We are interested in hiring professionals for a long term, so feel free to send us your CV.
+                      </p>
+                      <ul class="list-unstyled">
+                          <li><a href="#" class="social"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#" class="social"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#" class="social"><i class="fa fa-instagram"></i></a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12 footer-info">
+                    <div class="row">
+                      <div class="col-lg-6 col-6 footer-company float-left">
+                          <h3 class="footer-title">Company</h3>
+                          <ul class="list-unstyled">
+                              <li><a href="#" class="footer-style">About Us</a></li>
+                              <li><a href="#" class="footer-style">FAQs</a></li>
+                              <li><a href="#" class="footer-style">Location</a></li>
+                              <li><a href="#" class="footer-style">Blog</a></li>
+                              <li><a href="#" class="footer-style">Contact</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-lg-6 col-6 footer-shop float-left">
+                          <h3 class="footer-title">Shop</h3>
+                          <ul class="list-unstyled">
+                              <li><a href="#" class="footer-style">My Account</a></li>
+                              <li><a href="#" class="footer-style">Wishlist</a></li>
+                              <li><a href="#" class="footer-style">Track My Order</a></li>
+                              <li><a href="#" class="footer-style">Return & Refunds</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12 footer-newsletter">
+                      <h3 class="footer-title">Newsletter</h3>
+                      <p class="sale-off pt-lg-2">Keep up with the latest news, special offers and other discount information. Enter your e-mail and subscribe to our newsletter.</p>
+                      <div class="send-letter">
+                        <input type="text" class="message" placeholder="your@email.com">
+                        <button type="submit" class="register-btn">Register</button>
+                      </div>
+                      <p class="note">
+                          Note: Your email address will not be published. You can 
+                          unsubscribe any time you want by using unsubscribe link.
+                      </p>    
+                  </div>
               </div>
-              <div class="col-md-4">
-                <h5 class="footer-col__title">Newsletter</h5>
-                <p class="footer__newsletter">
-                  Keep up with the latest news, special offers and other discount information. Enter your e-mail and subscribe to our newsletter.
-                </p>
-              </div>
-              <div class="col-md-5">
-                <h5 class="footer-col__title">Contact Us</h5>
-                <div class="range">
-                  <div class="row">
-                    <div class="col-md-6"></div>
+          </div>
+          <div class="wrap-footer-v1-h1-down">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-md-6 col-12 footer-store">
+                      <p class="design">©2018 Renovate. Designed by Tu.</p>
+                  </div>
+                  <div class="col-md-6 col-12 footer-privacy d-flex justify-content-center justify-content-md-end">
+                      <ul class="list-unstyled">
+                          <li><a href="#" class="footer-style">Privacy Policy</a></li>
+                          <li><a href="#" class="footer-style">ToS</a></li>
+                          <li><a href="#" class="footer-style">Sitemap</a></li>
+                          <li><a href="#" class="footer-style">Affiliation</a></li>
+                      </ul>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
-        </div>
       </div>
     </footer>
 
@@ -278,8 +783,8 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="vendors/jquery.counterup.min.js"></script>
     <script src="vendors/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>

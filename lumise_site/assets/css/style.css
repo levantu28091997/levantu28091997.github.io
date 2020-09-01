@@ -3162,17 +3162,26 @@ body p{
     transition: all 0.3s ease 0s;
     background: #fff;
 }
-.box-product p{
+.box-product h3{
 	white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-top: 15px;
+    color: #000;
+}
+.box-product .product-amount{
+	font-size: 14px;
+    font-weight: 700;
+    color: #52cebd;
+    display: inline-block;
+    margin: 0;
+    padding-top: 5px;
 }
 .lumise_product a{
 	display: block;
 	transition: .3s;
 }
 .lumise_product a:hover{
-	margin-top: -10px;
     box-shadow: 0 4px 10px rgba(0,0,0,.27);
 }
 

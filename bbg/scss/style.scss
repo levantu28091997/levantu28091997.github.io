@@ -232,7 +232,7 @@ footer {
 }
 
 /*
-* Tin tức thời sự
+* Block
 */
 .block-news {
     border-top: solid 1px #cccbcb;
@@ -270,6 +270,9 @@ footer {
             &:not(:last-child) {
                 margin-bottom: 20px;
             }
+            .news-desc {
+                margin-top: 5px;
+            }
             &.new--horizontal {
                 &:not(:last-child) {
                     margin-bottom: 45px;
@@ -285,6 +288,7 @@ footer {
                 }
                 .news-desc {
                     width: calc(100% - 40% - 15px);
+                    margin-top: 0;
                 }
             }
         }

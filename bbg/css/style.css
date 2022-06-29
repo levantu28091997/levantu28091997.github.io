@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0; }
@@ -164,7 +163,7 @@ footer {
       font-size: 18px; }
 
 /*
-* Tin tức thời sự
+* Block
 */
 .block-news {
   border-top: solid 1px #cccbcb;
@@ -192,6 +191,8 @@ footer {
       font-size: 19px; }
   .block-news .block__second .news:not(:last-child) {
     margin-bottom: 20px; }
+  .block-news .block__second .news .news-desc {
+    margin-top: 5px; }
   .block-news .block__second .news.new--horizontal:not(:last-child) {
     margin-bottom: 45px; }
     .block-news .block__second .news.new--horizontal:not(:last-child).new--boder-bottom {
@@ -202,7 +203,8 @@ footer {
     width: 40%;
     margin-left: 15px; }
   .block-news .block__second .news.new--horizontal .news-desc {
-    width: calc(100% - 40% - 15px); }
+    width: calc(100% - 40% - 15px);
+    margin-top: 0; }
   .block-news .block__second.block__second--order {
     display: flex;
     flex-direction: column; }

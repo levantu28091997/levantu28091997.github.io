@@ -139,13 +139,15 @@ footer {
 * News
 */
 .news {
-  color: #30383b; }
-  .news .news__first .news-first__title {
-    font-size: 30px;
-    font-weight: 500;
-    margin: 20px 0 25px 0; }
-  .news .news__first .news-first__desc {
-    font-size: 23px; }
+  margin-bottom: 50px; }
+  .news .news__first {
+    color: #30383b; }
+    .news .news__first .news-first__title {
+      font-size: 30px;
+      font-weight: 500;
+      margin: 20px 0 25px 0; }
+    .news .news__first .news-first__desc {
+      font-size: 23px; }
   .news .news__list .news__list-title {
     color: #ff3400;
     padding: 12px 0;

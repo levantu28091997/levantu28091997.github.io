@@ -65,6 +65,8 @@ body {
   .main-menu .logo-mobile {
     display: none;
     max-width: 135px; }
+  .main-menu .menu-mobile {
+    width: 100%; }
   .main-menu .toogle-menu-mobile {
     display: none; }
   .main-menu .main-menu__link .link__homepage {

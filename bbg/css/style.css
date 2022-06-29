@@ -19,9 +19,6 @@ body {
   line-height: 1.2;
   box-sizing: border-box; }
 
-.font-third {
-  font-family: "AdobeHeitiStd", sans-serif; }
-
 .container {
   width: 1170px;
   max-width: 100%;

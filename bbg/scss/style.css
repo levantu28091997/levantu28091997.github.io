@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: "NSimSun";
+  src: url("/fonts/NSimSun.ttf") format("ttf"); }
+@font-face {
+  font-family: "SIMSUN";
+  src: url("/fonts/SIMSUN.ttf") format("ttf"); }
+@font-face {
+  font-family: "AdobeHeitiStd";
+  src: url("/fonts/AdobeHeitiStd-Regular.otf") format("otf"); }
+body {
+  font-family: "NSimSun", sans-serif;
+  color: #444040;
+  font-size: 17px;
+  width: 100%;
+  position: relative;
+  font-weight: 400; }
+
+/*# sourceMappingURL=style.css.map */

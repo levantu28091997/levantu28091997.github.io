@@ -54,6 +54,7 @@ body {
   text-align: center;
   padding: 15px 0; }
   .banner img {
+    margin: 0 auto;
     max-width: 558px;
     height: auto; }
 

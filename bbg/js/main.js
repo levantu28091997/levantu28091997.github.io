@@ -57,4 +57,25 @@ $(document).ready(function(){
         $('.media__category ul').toggleClass('active');
     })
 
+    // Resize content
+    let min=9,
+        max=26;
+    let reset = $('.news-details__content p').css('fontSize'); 
+    let elm = $('.news-details__content p');
+    let size = reset.replace('px', ''); 
+    $('.js-fontsize-plus').click(function() {
+        if (size<=max) {
+            size++;
+            elm.css({'fontSize' : size});
+        }
+        return false;   
+    });
+    $('.js-fontsize-minus').click(function() {
+        if (size>=min) {
+            size--;
+            elm.css({'fontSize' : size});
+        }
+        return false;   
+    });
+
   });

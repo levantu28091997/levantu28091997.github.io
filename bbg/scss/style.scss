@@ -494,6 +494,9 @@ footer {
                 font-size: 16px;
                 span {
                     padding: 0 5px;
+                    &:hover {
+                        cursor: pointer;
+                    }
                     &:first-child {
                         margin-right: 5px;
                     }
@@ -526,6 +529,17 @@ footer {
     }
     .news-detail__social {
         margin-bottom: 20px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                display: inline-block;
+                width: calc(25% - 10px);
+            }
+        }
+        .social-label__mb {
+            display: none;
+        }
         .social-item {
             text-align: center;
             color: #fff;
@@ -839,6 +853,21 @@ footer {
         }
     }
 
+    .news-detail {
+        .col-md-3,
+        .col-md-9 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .fanpage {
+            display: none;
+        }
+        .news-detail__comment {
+            margin-bottom: 30px;
+        }
+    }
+
     footer {
         padding: 30px 0;
         .col-md-3, .col-md-9 {
@@ -900,6 +929,52 @@ footer {
             .col-md-6 {
                 max-width: 100%;
                 flex: 0 0 100%;
+            }
+        }
+    }
+
+    .news-detail {
+        .news-detail__title {
+            font-size: 22px;
+        }
+        .news-detail__head {
+            .detail-head__action {
+                .print {
+                    display: none !important;
+                }
+            }
+        }
+        .news-details__content {
+            p {
+                margin-bottom: 12px;
+                font-size: 14px;
+            }
+        }
+        .news-detail__social {
+            ul {
+                justify-content: flex-end;
+                li {
+                    width: unset;
+                    border-radius: 7px;
+                    overflow: hidden;
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .social-item {
+                padding: 5px 12px;
+                &.social-facebook-share {
+                    img {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .social-label__pc {
+                display: none;
+            }
+            .social-label__mb {
+                display: inline-block;
             }
         }
     }
@@ -978,6 +1053,11 @@ footer {
                     }
                 }
             }
+        }
+    }
+    .news-cate {
+        .news-item {
+            margin-bottom: 30px;
         }
     }
 }

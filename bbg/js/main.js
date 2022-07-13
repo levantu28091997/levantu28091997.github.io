@@ -6,7 +6,7 @@ $(document).ready(function(){
       items: 4,
       margin: 35,
       loop: true,
-      autoplay: false,
+      autoplay: true,
       dots: false,
       dotsEach: true,
       autoplayTimeout: 1000,
@@ -46,15 +46,19 @@ $(document).ready(function(){
         $('.menu-mobile').removeClass('active');
         $('.js-menu-overlay').removeClass('active');
     })
-
-    $('.js-toggle-menu').on('click', function(e){
-        $('.js-menu-overlay').addClass('active');
-        $('.menu-mobile').addClass('active');
+    $('.js-close-menu').on('click', function(e){
+        $('.menu-mobile').removeClass('active');
+        $('.js-menu-overlay').removeClass('active');
     })
 
     // media category dropdown
     $('.js-media-category').on('click', function(e){
         $('.media__category ul').toggleClass('active');
+    })
+
+    // comment dropdown
+    $('.js-toggle-comment').on('click', function(e){
+        $('.js-form-comment').toggleClass('active');
     })
 
     // Resize content
@@ -79,5 +83,16 @@ $(document).ready(function(){
             return false;   
         });
     }
+ 
+    // Toggle submenu mobile
+    $(document).on('click', 'li .sub-menu', function (e) {
+        var $this = $(this);
+        var $thisParent = $this.closest('li');
+        if ($thisParent.length) {
+            $thisParent.toggleClass('show-submenu').find('> .sub').stop().slideToggle();
+        }
+        e.preventDefault();
+        return false;
+    });
 
   });

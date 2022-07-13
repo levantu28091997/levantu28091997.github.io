@@ -73,7 +73,26 @@
                                 <img src="images/home.svg" alt="home">
                             </a>
                             <ul>
-                                <li><a href="">时事新闻</a></li>
+                                <li>
+                                    <a class="sub-menu" href="">
+                                        <span>时事新闻</span>
+                                        <span class="icon-submenu">
+                                            <img src="images/arrown.svg" alt="icon">
+                                        </span>
+                                    </a>
+                                    
+                                    <ul class="sub">
+                                        <li>
+                                            <a href="">Submenu 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Submenu 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Submenu 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li><a href="">农业经济</a></li>
                                 <li><a href="">投资发展</a></li>
                                 <li><a href="">社会</a></li>
@@ -85,6 +104,11 @@
                         <div class="d-flex align-items-center justify-content-between main-menu__search">
                             <input type="text" placeholder="請輸入關鍵詞">
                             <button type="button">搜索</button>
+                        </div>
+                        <div class="js-close-menu btn-close-menu">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.275664 0.275664C0.643216 -0.091888 1.23914 -0.091888 1.60669 0.275664L8 6.66898L14.3933 0.275664C14.7609 -0.091888 15.3568 -0.091888 15.7243 0.275664C16.0919 0.643216 16.0919 1.23914 15.7243 1.60669L9.33102 8L15.7243 14.3933C16.0919 14.7609 16.0919 15.3568 15.7243 15.7243C15.3568 16.0919 14.7609 16.0919 14.3933 15.7243L8 9.33102L1.60669 15.7243C1.23914 16.0919 0.643216 16.0919 0.275664 15.7243C-0.091888 15.3568 -0.091888 14.7609 0.275664 14.3933L6.66898 8L0.275664 1.60669C-0.091888 1.23914 -0.091888 0.643216 0.275664 0.275664Z" fill="#FFF"/>
+                            </svg>                            
                         </div>
                     </div>
                     <div class="js-toggle-menu toogle-menu-mobile">
@@ -169,32 +193,6 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- <div class="row">
-                            <div class="col-md-3">
-                                <a href="" class="social-item social-facebook-share">
-                                    <img src="images/icon_f.svg" alt="icon">
-                                    Chia sẻ Facebook
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="" class="social-item social-facebook-like">
-                                    <img src="images/icon_hand_right.svg" alt="icon">
-                                    Like Báo Bắc Giang
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="" class="social-item social-zalo-share">
-                                    <img src="images/icon_zalo.svg" alt="icon">
-                                    Chia sẻ
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="" class="social-item social-weibo-share">
-                                    <img src="images/weibo.svg" alt="icon">
-                                    Weibo
-                                </a>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="news-detail__tag">
                         
@@ -221,7 +219,16 @@
                     </div>
                     <div class="news-detail__comment">
                         <h3 class="detail-comment__title">读者意见 <span>(0)</span></h3>
-                        <textarea name="commnet" rows="5" placeholder="你的评论..."></textarea>
+                        <div class="js-toggle-comment btn-toggle-comment">comment</div>
+                        <div class="js-form-comment form-comment">
+                            <form action="">
+                                <input type="text" name="your_name" placeholder="Your name">
+                                <input type="email" name="email" placeholder="Address email">
+                                <input type="tel" name="phone" placeholder="Phone number">
+                                <textarea name="commnet" rows="5" placeholder="你的评论..."></textarea>
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">

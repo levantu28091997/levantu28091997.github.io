@@ -20,79 +20,105 @@
     <title>Báo Bắc Giang</title>
 </head>
 <body>
-    <div class="taskbar">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="taskbar__language">
-                    <ul>
-                        <li><span>TIẾNG VIỆT</span></li>
-                        <li><span>ENGLISH</span></li>
-                    </ul>
-                </div>
-                <div class="taskbar__social">
-                    <ul>
-                        <li>
-                            <span>
-                                <img src="images/social/facebook.png" alt="facebook">
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                <img src="images/social/zalo.png" alt="zalo">
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                <img src="images/social/weibo.png" alt="weibo">
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                <img src="images/social/youtube.png" alt="youtube">
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="banner">
-        <img src="images/logo.png" alt="logo">
-    </div>
-
-    <!-- menu -->
-    <div class="main-menu">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <img class="logo-mobile" src="images/logo_mobile_2.png" alt="Logo mobile">
-                <div class="d-flex align-items-center justify-content-between menu-mobile">
-                    <div class="d-flex align-items-center main-menu__link">
-                        <a class="link__homepage" href="">
-                            <img src="images/home.svg" alt="home">
-                        </a>
+    <header>
+        <div class="taskbar">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="taskbar__language">
                         <ul>
-                            <li><a href="">时事新闻</a></li>
-                            <li><a href="">农业经济</a></li>
-                            <li><a href="">投资发展</a></li>
-                            <li><a href="">社会</a></li>
-                            <li><a href="">文化旅游</a></li>
-                            <li><a href="">体育</a></li>
-                            <li><a href="">多媒体</a></li>
+                            <li><span>TIẾNG VIỆT</span></li>
+                            <li><span>ENGLISH</span></li>
                         </ul>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between main-menu__search">
-                        <input type="text" placeholder="請輸入關鍵詞">
-                        <button type="button">搜索</button>
+                    <div class="taskbar__social">
+                        <ul>
+                            <li>
+                                <span>
+                                    <img src="images/social/facebook.png" alt="facebook">
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="images/social/zalo.png" alt="zalo">
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="images/social/weibo.png" alt="weibo">
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <img src="images/social/youtube.png" alt="youtube">
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="js-toggle-menu toogle-menu-mobile">
-                    <img src="images/menu.svg" alt="Icon">
-                </div>
-                <div class="js-menu-overlay menu-mobile-overlay"></div>
             </div>
         </div>
-    </div>
+    
+        <div class="banner">
+            <img src="images/logo.png" alt="logo">
+        </div>
+    
+        <!-- menu -->
+        <div class="main-menu">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <img class="logo-mobile" src="images/logo_mobile_2.png" alt="Logo mobile">
+                    <div class="d-flex align-items-center justify-content-between menu-mobile">
+                        <div class="d-flex align-items-center main-menu__link">
+                            <a class="link__homepage" href="">
+                                <img src="images/home.svg" alt="home">
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="sub-menu" href="">
+                                        <span>时事新闻</span>
+                                        <span class="icon-submenu">
+                                            <img src="images/arrown.svg" alt="icon">
+                                        </span>
+                                    </a>
+                                    
+                                    <ul class="sub">
+                                        <li>
+                                            <a href="">Submenu 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Submenu 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Submenu 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="">农业经济</a></li>
+                                <li><a href="">投资发展</a></li>
+                                <li><a href="">社会</a></li>
+                                <li><a href="">文化旅游</a></li>
+                                <li><a href="">体育</a></li>
+                                <li><a href="">多媒体</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between main-menu__search">
+                            <input type="text" placeholder="請輸入關鍵詞">
+                            <button type="button">搜索</button>
+                        </div>
+                        <div class="js-close-menu btn-close-menu">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.275664 0.275664C0.643216 -0.091888 1.23914 -0.091888 1.60669 0.275664L8 6.66898L14.3933 0.275664C14.7609 -0.091888 15.3568 -0.091888 15.7243 0.275664C16.0919 0.643216 16.0919 1.23914 15.7243 1.60669L9.33102 8L15.7243 14.3933C16.0919 14.7609 16.0919 15.3568 15.7243 15.7243C15.3568 16.0919 14.7609 16.0919 14.3933 15.7243L8 9.33102L1.60669 15.7243C1.23914 16.0919 0.643216 16.0919 0.275664 15.7243C-0.091888 15.3568 -0.091888 14.7609 0.275664 14.3933L6.66898 8L0.275664 1.60669C-0.091888 1.23914 -0.091888 0.643216 0.275664 0.275664Z" fill="#FFF"/>
+                            </svg>                            
+                        </div>
+                    </div>
+                    <div class="js-toggle-menu toogle-menu-mobile">
+                        <img src="images/menu.svg" alt="Icon">
+                    </div>
+                    <div class="js-menu-overlay menu-mobile-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- content -->
     <div class="container wrapper">
@@ -180,18 +206,26 @@
 
         <!-- Tin tức thời sự -->
         <section class="block-news">
-            <h2 class="block-news__title">时事新闻</h2>
+            <h2 class="block-news__title">
+                <a href="">时事新闻</a>
+            </h2>
             <div class="block-new__content">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="block__first">
-                            <img src="images/thoi_su.png" alt="thumbnail">
+                            <a href="">
+                                <img src="images/thoi_su.png" alt="thumbnail">
+                            </a>
                             <div class="block-new__text">
-                                <h3 class="block-first__title ">北江省党委常委会见并祝贺卫生官员</h3>
+                                <h3 class="block-first__title ">
+                                    <a href="">北江省党委常委会见并祝贺卫生官员</a>
+                                </h3>
                                 <p class="block-first__desc">
-                                    (BGO) - 2月24日上午，北江省委常委在省委办公厅召开会议，对越
-                                    南医生建党67周年向卫生工作者表示祝贺和鼓励。第 27/2 天。
-                                    1955-2022）。
+                                    <a href="">
+                                        (BGO) - 2月24日上午，北江省委常委在省委办公厅召开会议，对越
+                                        南医生建党67周年向卫生工作者表示祝贺和鼓励。第 27/2 天。
+                                        1955-2022）。
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -201,42 +235,54 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="news">
-                                        <img src="images/thoi_su_01.png" alt="thumbnail">
+                                        <a href="">
+                                            <img src="images/thoi_su_01.png" alt="thumbnail">
+                                        </a>
                                         <p class="news-desc">
-                                            燕东区需集中资源，早日打造交通突破口
+                                            <a href="">燕东区需集中资源，早日打造交通突破口</a>
                                         </p>
                                     </div>
                                     <div class="news">
-                                        <img src="images/thoi_su_02.png" alt="thumbnail">
+                                        <a href="">
+                                            <img src="images/thoi_su_02.png" alt="thumbnail">
+                                        </a>
                                         <p class="news-desc">
-                                            燕东区需集中资源，早日打造交通突破口
+                                            <a href="">燕东区需集中资源，早日打造交通突破口</a>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="news new--horizontal d-flex">
                                         <p class="news-desc">
-                                            燕东区需集中资源，早日打造交通突破口
+                                            <a href="">燕东区需集中资源，早日打造交通突破口</a>
                                         </p>
-                                        <img src="images/thoi_su_03.png" alt="thumbnail">
+                                        <a href="" class="news-thumbnail">
+                                            <img src="images/thoi_su_03.png" alt="thumbnail">
+                                        </a>
                                     </div>
                                     <div class="news new--horizontal d-flex">
                                         <p class="news-desc">
-                                            燕东区需集中资源，早日打造交通突破口
+                                            <a href="">燕东区需集中资源，早日打造交通突破口</a>
                                         </p>
-                                        <img src="images/thoi_su_04.png" alt="thumbnail">
+                                        <a href="" class="news-thumbnail">
+                                            <img src="images/thoi_su_04.png" alt="thumbnail">
+                                        </a>
                                     </div>
                                     <div class="news new--horizontal d-flex">
                                         <p class="news-desc">
-                                            燕东区需集中资源，早日打造交通突破口
+                                            <a href="">燕东区需集中资源，早日打造交通突破口</a>
                                         </p>
-                                        <img src="images/thoi_su_05.png" alt="thumbnail">
+                                        <a href="" class="news-thumbnail">
+                                            <img src="images/thoi_su_05.png" alt="thumbnail">
+                                        </a>
                                     </div>
                                     <div class="news new--horizontal d-flex">
                                         <p class="news-desc">
-                                            燕东区需集中资源，早日打造交通突破口
+                                            <a href="">燕东区需集中资源，早日打造交通突破口</a>
                                         </p>
-                                        <img src="images/thoi_su_06.png" alt="thumbnail">
+                                        <a href="" class="news-thumbnail">
+                                            <img src="images/thoi_su_06.png" alt="thumbnail">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -248,18 +294,24 @@
 
         <!-- Kinh te Nông nghiệp -->
         <section class="block-news">
-            <h2 class="block-news__title">农业经济</h2>
+            <h2 class="block-news__title">
+                <a href="">农业经济</a>
+            </h2>
             <div class="block-new__content">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="block__first">
                             <img src="images/kinh_te.png" alt="thumbnail">
                             <div class="block-new__text">
-                                <h3 class="block-first__title ">修缮水利堤坝：加快进度，确保防洪</h3>
+                                <h3 class="block-first__title ">
+                                    <a href="">修缮水利堤坝：加快进度，确保防洪</a>
+                                </h3>
                                 <p class="block-first__desc">
-                                    (BGO) - 由于决心在雨季和暴风雨季节确保工程安全，这些天来，
-                                    投资者和承包商正在关注建设灌溉工程以及修复修复堤坝问题的手段、
-                                    材料和人力资源。。。
+                                    <a href="">
+                                        (BGO) - 由于决心在雨季和暴风雨季节确保工程安全，这些天来，
+                                        投资者和承包商正在关注建设灌溉工程以及修复修复堤坝问题的手段、
+                                        材料和人力资源。。。
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -269,42 +321,54 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="news">
-                                        <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        <a href="">
+                                            <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        </a>
                                         <p class="news-desc">
-                                            调整非公开发行公司债券的发行和投资
+                                            <a href="">调整非公开发行公司债券的发行和投资</a>
                                         </p>
                                     </div>
                                     <div class="news">
-                                        <img src="images/kinh_te_02.png" alt="thumbnail">
+                                        <a href="">
+                                            <img src="images/kinh_te_02.png" alt="thumbnail">
+                                        </a>
                                         <p class="news-desc">
-                                            民办幼儿园、小学可按3.3%/年的利率借款
+                                            <a href="">民办幼儿园、小学可按3.3%/年的利率借款</a>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="news new--horizontal new--boder-bottom d-flex">
                                         <p class="news-desc">
-                                            北江 在 PCI 排名中排名第 31
+                                            <a href="">北江 在 PCI 排名中排名第 31</a>
                                         </p>
-                                        <img src="images/kinh_te_03.png" alt="thumbnail">
+                                        <a href="" class="news-thumbnail">
+                                            <img src="images/kinh_te_03.png" alt="thumbnail">
+                                        </a>
                                     </div>
                                     <div class="news new--horizontal new--boder-bottom d-flex">
                                         <p class="news-desc">
-                                            签署陆银荔枝出口欧洲协议
+                                            <a href="">签署陆银荔枝出口欧洲协议</a>
                                         </p>
-                                        <img src="images/kinh_te_04.png" alt="thumbnail">
+                                        <a href="" class="news-thumbnail">
+                                            <img src="images/kinh_te_04.png" alt="thumbnail">
+                                        </a>
                                     </div>
                                     <div class="news new--horizontal new--boder-bottom d-flex">
                                         <p class="news-desc">
-                                            在北江市开设国际级五星级绿蟹海鲜餐厅
+                                            <a href="">在北江市开设国际级五星级绿蟹海鲜餐厅</a>
                                         </p>
-                                        <img src="images/kinh_te_05.png" alt="thumbnail">
+                                        <a href="" class="news-thumbnail">
+                                            <img src="images/kinh_te_05.png" alt="thumbnail">
+                                        </a>
                                     </div>
                                     <div class="news new--horizontal new--boder-bottom d-flex">
                                         <p class="news-desc">
-                                            猪和家禽价格上涨，北江农民赚取高额利润
+                                            <a href="">猪和家禽价格上涨，北江农民赚取高额利润</a>
                                         </p>
-                                        <img src="images/kinh_te_06.png" alt="thumbnail">
+                                        <a href="" class="news-thumbnail">
+                                            <img src="images/kinh_te_06.png" alt="thumbnail">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -316,18 +380,26 @@
 
         <!-- Đầu tư Phát triển -->
         <section class="block-news">
-            <h2 class="block-news__title">投资发展</h2>
+            <h2 class="block-news__title">
+                <a href="">投资发展</a>
+            </h2>
             <div class="block-new__content">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="block__first">
-                            <img src="images/kinh_te.png" alt="thumbnail">
+                            <a href="">
+                                <img src="images/kinh_te.png" alt="thumbnail">
+                            </a>
                             <div class="block-new__text">
-                                <h3 class="block-first__title ">记者、基层宣传员：向群众“架起”信息</h3>
+                                <h3 class="block-first__title ">
+                                    <a href="">记者、基层宣传员：向群众“架起”信息</a>
+                                </h3>
                                 <p class="block-first__desc">
-                                    (BGO) - 北江市党委充分认识到地方记者和宣传人员在部署和传播
-                                    党的方针和方针、国家政策和法律方面的重要作用，始终有兴趣领
-                                    导、指导、选拔和建设这个团队满足新形势下的任务要求。
+                                    <a href="">
+                                        (BGO) - 北江市党委充分认识到地方记者和宣传人员在部署和传播
+                                        党的方针和方针、国家政策和法律方面的重要作用，始终有兴趣领
+                                        导、指导、选拔和建设这个团队满足新形势下的任务要求。
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -337,29 +409,41 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="news">
-                                        <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        <a href="">
+                                            <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        </a>
                                         <p class="news-desc">
-                                            掌握体检和治疗中的高难度技术
-                                        </p>
-                                    </div>
-                                    <div class="news">
-                                        <img src="images/kinh_te_02.png" alt="thumbnail">
-                                        <p class="news-desc">
-                                            北江：12名学生在网上国际象棋锦标赛中获得一等奖
+                                            <a href=""> 在家庭中建立阅读文化：培养知识，连接爱 </a>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="news">
-                                        <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        <a href="">
+                                            <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        </a>
                                         <p class="news-desc">
-                                            工人的生殖保健：很少关注，很多后果
+                                            <a href=""> 在家庭中建立阅读文化：培养知识，连接爱 </a>
                                         </p>
                                     </div>
+                                </div>
+                                <div class="col-md-6">
                                     <div class="news">
-                                        <img src="images/kinh_te_02.png" alt="thumbnail">
+                                        <a href="">
+                                            <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        </a>
                                         <p class="news-desc">
-                                            民办学前机构：关注教师生活，吸引学生
+                                            <a href=""> 在家庭中建立阅读文化：培养知识，连接爱 </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="news">
+                                        <a href="">
+                                            <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        </a>
+                                        <p class="news-desc">
+                                            <a href=""> 在家庭中建立阅读文化：培养知识，连接爱 </a>
                                         </p>
                                     </div>
                                 </div>
@@ -372,19 +456,25 @@
 
         <!-- Xã hội -->
         <section class="block-news">
-            <h2 class="block-news__title">社会</h2>
+            <h2 class="block-news__title">
+                <a href="">社会</a>
+            </h2>
             <div class="block-new__content">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="block__first">
                             <img src="images/kinh_te.png" alt="thumbnail">
                             <div class="block-new__text">
-                                <h3 class="block-first__title ">北江加强历史文物保护、修复和修复管理</h3>
+                                <h3 class="block-first__title ">
+                                    <a href="">北江加强历史文物保护、修复和修复管理</a>
+                                </h3>
                                 <p class="block-first__desc">
-                                    (BGO) - 北江省人民委员会主席刚刚发文要求各部门：文化、体育
-                                    和旅游； 规划与投资； 金融; 构造; 北江报； 省广播电视台； 
-                                    各区市人民委员会将加强对全省历史文物、风景名胜区保护、修复、
-                                    修复工作的管理。
+                                    <a href="">
+                                        (BGO) - 北江省人民委员会主席刚刚发文要求各部门：文化、体育
+                                        和旅游； 规划与投资； 金融; 构造; 北江报； 省广播电视台； 
+                                        各区市人民委员会将加强对全省历史文物、风景名胜区保护、修复、
+                                        修复工作的管理。
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -394,29 +484,41 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="news">
-                                        <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        <a href="">
+                                            <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        </a>
                                         <p class="news-desc">
-                                            在家庭中建立阅读文化：培养知识，连接爱
-                                        </p>
-                                    </div>
-                                    <div class="news">
-                                        <img src="images/kinh_te_02.png" alt="thumbnail">
-                                        <p class="news-desc">
-                                            在家庭中建立阅读文化：培养知识，连接爱
+                                            <a href=""> 在家庭中建立阅读文化：培养知识，连接爱 </a>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="news">
-                                        <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        <a href="">
+                                            <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        </a>
                                         <p class="news-desc">
-                                            北江广播和电视台将报道SEA Games 31的现场羽毛球比赛
+                                            <a href=""> 在家庭中建立阅读文化：培养知识，连接爱 </a>
                                         </p>
                                     </div>
+                                </div>
+                                <div class="col-md-6">
                                     <div class="news">
-                                        <img src="images/kinh_te_02.png" alt="thumbnail">
+                                        <a href="">
+                                            <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        </a>
                                         <p class="news-desc">
-                                            第39届北江报传统荒野奖：浪江区获全队一等奖
+                                            <a href=""> 在家庭中建立阅读文化：培养知识，连接爱 </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="news">
+                                        <a href="">
+                                            <img src="images/kinh_te_01.png" alt="thumbnail">
+                                        </a>
+                                        <p class="news-desc">
+                                            <a href=""> 在家庭中建立阅读文化：培养知识，连接爱 </a>
                                         </p>
                                     </div>
                                 </div>
@@ -429,22 +531,27 @@
 
         <!-- Văn hóa Du lịch -->
         <section class="block-news block-news--middle">
-            <h2 class="block-news__title">文化旅游</h2>
+            <h2 class="block-news__title">
+                <a href="">文化旅游</a>
+            </h2>
             <div class="block-new__content">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="block__first">
-                            <img src="images/the_thao_01.png" alt="thumbnail">
-                            
+                            <a href=""><img src="images/the_thao_01.png" alt="thumbnail"></a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="block__middle">
-                            <h3 class="block-first__title ">北江加强历史文物保护、修复和修复管理</h3>
+                            <h3 class="block-first__title ">
+                                <a href="">北江加强历史文物保护、修复和修复管理</a>
+                            </h3>
                             <p class="block-first__desc">
-                                4月27日，韩国最大的港口城市
-                                釜山宣布了一项合作计划，将
-                                在釜山港附近建设世界上第一个原型漂浮城市。
+                                <a href="">
+                                    4月27日，韩国最大的港口城市
+                                    釜山宣布了一项合作计划，将
+                                    在釜山港附近建设世界上第一个原型漂浮城市。
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -452,21 +559,27 @@
                         <div class="block__second block__second--order">
                             <div class="news new--horizontal new--boder-bottom d-flex">
                                 <p class="news-desc">
-                                    北江 在 PCI 排名中排名第 31
+                                    <a href="">北江 在 PCI 排名中排名第 31</a>
                                 </p>
-                                <img src="images/the_thao_02.png" alt="thumbnail">
+                                <a href="" class="news-thumbnail">
+                                    <img src="images/the_thao_02.png" alt="thumbnail">
+                                </a>
                             </div>
                             <div class="news new--horizontal new--boder-bottom d-flex">
                                 <p class="news-desc">
-                                    签署陆银荔枝出口欧洲协议
+                                    <a href="">签署陆银荔枝出口欧洲协议</a>
                                 </p>
-                                <img src="images/the_thao_03.png" alt="thumbnail">
+                                <a href="" class="news-thumbnail">
+                                    <img src="images/the_thao_03.png" alt="thumbnail">
+                                </a>
                             </div>
                             <div class="news new--horizontal new--boder-bottom d-flex">
                                 <p class="news-desc">
-                                    在北江市开设国际级五星级绿蟹海鲜餐厅
+                                    <a href="">在北江市开设国际级五星级绿蟹海鲜餐厅</a>
                                 </p>
-                                <img src="images/the_thao_04.png" alt="thumbnail">
+                                <a href="" class="news-thumbnail">
+                                    <img src="images/the_thao_04.png" alt="thumbnail">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -476,22 +589,29 @@
 
         <!-- Thể  thao -->
         <section class="block-news block-news--middle">
-            <h2 class="block-news__title">体育</h2>
+            <h2 class="block-news__title">
+                <a href="">体育</a>
+            </h2>
             <div class="block-new__content">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="block__first">
-                            <img src="images/the_thao_01.png" alt="thumbnail">
-                            
+                            <a href="">
+                                <img src="images/the_thao_01.png" alt="thumbnail">
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="block__middle">
-                            <h3 class="block-first__title ">北江加强历史文物保护、修复和修复管理</h3>
+                            <h3 class="block-first__title ">
+                                <a href="">北江加强历史文物保护、修复和修复管理</a>
+                            </h3>
                             <p class="block-first__desc">
-                                4月27日，韩国最大的港口城市
-                                釜山宣布了一项合作计划，将
-                                在釜山港附近建设世界上第一个原型漂浮城市。
+                                <a href="">
+                                    4月27日，韩国最大的港口城市
+                                    釜山宣布了一项合作计划，将
+                                    在釜山港附近建设世界上第一个原型漂浮城市。
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -499,21 +619,27 @@
                         <div class="block__second block__second--order">
                             <div class="news new--horizontal new--boder-bottom d-flex">
                                 <p class="news-desc">
-                                    北江 在 PCI 排名中排名第 31
+                                    <a href="">北江 在 PCI 排名中排名第 31</a>
                                 </p>
-                                <img src="images/the_thao_02.png" alt="thumbnail">
+                                <a href="" class="news-thumbnail">
+                                    <img src="images/the_thao_02.png" alt="thumbnail">
+                                </a>
                             </div>
                             <div class="news new--horizontal new--boder-bottom d-flex">
                                 <p class="news-desc">
-                                    签署陆银荔枝出口欧洲协议
+                                    <a href="">签署陆银荔枝出口欧洲协议</a>
                                 </p>
-                                <img src="images/the_thao_03.png" alt="thumbnail">
+                                <a href="" class="news-thumbnail">
+                                    <img src="images/the_thao_03.png" alt="thumbnail">
+                                </a>
                             </div>
                             <div class="news new--horizontal new--boder-bottom d-flex">
                                 <p class="news-desc">
-                                    在北江市开设国际级五星级绿蟹海鲜餐厅
+                                    <a href="">在北江市开设国际级五星级绿蟹海鲜餐厅</a>
                                 </p>
-                                <img src="images/the_thao_04.png" alt="thumbnail">
+                                <a href="" class="news-thumbnail">
+                                    <img src="images/the_thao_04.png" alt="thumbnail">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -525,9 +651,13 @@
         <section class="block-news media">
             <div class="media__wrapper">
                 <div class="media__head">
-                    <h2 class="block-news__title">多媒体</h2>
+                    <h2 class="block-news__title">
+                        <a href="">多媒体</a>
+                    </h2>
                     <div class="media__category">
-                        <h3 class="js-media-category media-category__label">Choose Category</h3>
+                        <h3 class="js-media-category media-category__label">
+                            <img src="images/three-dot.svg" alt="Icon">
+                        </h3>
                         <ul>
                             <li><a href="">图库</a></li>
                             <li><a href="">视频</a></li>
@@ -540,33 +670,53 @@
                     <div class="js-media owl-carousel owl-theme">
                         <div class="media-item">
                             <div class="media-item__img">
-                                <img src="images/media_01.png" alt="Slide" class="img-width100">
+                                <a href="">
+                                    <img src="images/media_01.png" alt="Slide" class="img-width100">
+                                </a>
                             </div>
-                            <h3 class="media-item__title">沙巴——神奇的美丽</h3>
+                            <h3 class="media-item__title">
+                                <a href="">沙巴——神奇的美丽</a>
+                            </h3>
                         </div>
                         <div class="media-item">
                             <div class="media-item__img">
-                                <img src="images/media_02.png" alt="Slide" class="img-width100">
+                                <a href="">
+                                    <img src="images/media_02.png" alt="Slide" class="img-width100">
+                                </a>
                             </div>
-                            <h3 class="media-item__title">水稻树的美丽</h3>
+                            <h3 class="media-item__title">
+                                <a href="">水稻树的美丽</a>
+                            </h3>
                         </div>
                         <div class="media-item">
                             <div class="media-item__img">
-                                <img src="images/media_03.png" alt="Slide" class="img-width100">
+                                <a href="">
+                                    <img src="images/media_03.png" alt="Slide" class="img-width100">
+                                </a>
                             </div>
-                            <h3 class="media-item__title">省人委会主席黎英阳行行活动</h3>
+                            <h3 class="media-item__title">
+                                <a href="">省人委会主席黎英阳行行活动</a>
+                            </h3>
                         </div>
                         <div class="media-item">
                             <div class="media-item__img">
-                                <img src="images/media_04.png" alt="Slide" class="img-width100">
+                                <a href="">
+                                    <img src="images/media_04.png" alt="Slide" class="img-width100">
+                                </a>
                             </div>
-                            <h3 class="media-item__title">兴奋的工作精神，年初的生产</h3>
+                            <h3 class="media-item__title">
+                                <a href="">兴奋的工作精神，年初的生产</a>
+                            </h3>
                         </div>
                         <div class="media-item">
                             <div class="media-item__img">
-                                <img src="images/media_02.png" alt="Slide" class="img-width100">
+                                <a href="">
+                                    <img src="images/media_02.png" alt="Slide" class="img-width100">
+                                </a>
                             </div>
-                            <h3 class="media-item__title">沙巴——神奇的美丽</h3>
+                            <h3 class="media-item__title">
+                                <a href="">沙巴——神奇的美丽</a>
+                            </h3>
                         </div>
                     </div>
                 </div>
